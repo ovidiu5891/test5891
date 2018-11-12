@@ -1,0 +1,72 @@
+-------------------------------------------------------------------------------
+Test set: cucumberRunnerTest
+-------------------------------------------------------------------------------
+Tests run: 30, Failures: 8, Errors: 4, Skipped: 6, Time elapsed: 54.502 sec <<< FAILURE! - in cucumberRunnerTest
+Then I should see the main-categories "GESICHT"(| GESICHT |  | gesichtspflege |)  Time elapsed: 0.006 sec  <<< FAILURE!
+org.junit.ComparisonFailure: expected:<[]> but was:<[GESICHT]>
+
+| GESICHT |  | gesichtspflege |  Time elapsed: 0.007 sec  <<< FAILURE!
+org.junit.ComparisonFailure: expected:<[]> but was:<[GESICHT]>
+
+Then I should see the main-categories "KORPER"(| KORPER |  | koerperpflege |)  Time elapsed: 0.001 sec  <<< ERROR!
+org.openqa.selenium.ElementNotVisibleException: 
+{"errorMessage":"Element is not currently visible and may not be manipulated","request":{"headers":{"Accept-Encoding":"gzip","Connection":"Keep-Alive","Content-Length":"32","Content-Type":"application/json; charset=utf-8","Host":"localhost:8777","User-Agent":"selenium/3.14.0 (java windows)"},"httpVersion":"1.1","method":"POST","post":"{\n  \"id\": \":wdc:1542039770184\"\n}","url":"/click","urlParsed":{"anchor":"","query":"","file":"click","directory":"/","path":"/click","relative":"/click","port":"","host":"","password":"","user":"","userInfo":"","authority":"","protocol":"","source":"/click","queryKey":{},"chunks":["click"]},"urlOriginal":"/session/2f4dacf0-e697-11e8-9c43-c3b00da4d9bb/element/:wdc:1542039770184/click"}}
+Command duration or timeout: 0 milliseconds
+Caused by: org.openqa.selenium.remote.ScreenshotException: Screen shot has been taken
+Caused by: org.openqa.selenium.ElementNotVisibleException: 
+{"errorMessage":"Element is not currently visible and may not be manipulated","request":{"headers":{"Accept-Encoding":"gzip","Connection":"Keep-Alive","Content-Length":"32","Content-Type":"application/json; charset=utf-8","Host":"localhost:8777","User-Agent":"selenium/3.14.0 (java windows)"},"httpVersion":"1.1","method":"POST","post":"{\n  \"id\": \":wdc:1542039770184\"\n}","url":"/click","urlParsed":{"anchor":"","query":"","file":"click","directory":"/","path":"/click","relative":"/click","port":"","host":"","password":"","user":"","userInfo":"","authority":"","protocol":"","source":"/click","queryKey":{},"chunks":["click"]},"urlOriginal":"/session/2f4dacf0-e697-11e8-9c43-c3b00da4d9bb/element/:wdc:1542039770184/click"}}
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'OVI', ip: '10.0.75.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_181'
+Driver info: driver.version: unknown
+
+| KORPER |  | koerperpflege |  Time elapsed: 0.003 sec  <<< ERROR!
+org.openqa.selenium.ElementNotVisibleException: 
+{"errorMessage":"Element is not currently visible and may not be manipulated","request":{"headers":{"Accept-Encoding":"gzip","Connection":"Keep-Alive","Content-Length":"32","Content-Type":"application/json; charset=utf-8","Host":"localhost:8777","User-Agent":"selenium/3.14.0 (java windows)"},"httpVersion":"1.1","method":"POST","post":"{\n  \"id\": \":wdc:1542039770184\"\n}","url":"/click","urlParsed":{"anchor":"","query":"","file":"click","directory":"/","path":"/click","relative":"/click","port":"","host":"","password":"","user":"","userInfo":"","authority":"","protocol":"","source":"/click","queryKey":{},"chunks":["click"]},"urlOriginal":"/session/2f4dacf0-e697-11e8-9c43-c3b00da4d9bb/element/:wdc:1542039770184/click"}}
+Command duration or timeout: 0 milliseconds
+Caused by: org.openqa.selenium.remote.ScreenshotException: Screen shot has been taken
+Caused by: org.openqa.selenium.ElementNotVisibleException: 
+{"errorMessage":"Element is not currently visible and may not be manipulated","request":{"headers":{"Accept-Encoding":"gzip","Connection":"Keep-Alive","Content-Length":"32","Content-Type":"application/json; charset=utf-8","Host":"localhost:8777","User-Agent":"selenium/3.14.0 (java windows)"},"httpVersion":"1.1","method":"POST","post":"{\n  \"id\": \":wdc:1542039770184\"\n}","url":"/click","urlParsed":{"anchor":"","query":"","file":"click","directory":"/","path":"/click","relative":"/click","port":"","host":"","password":"","user":"","userInfo":"","authority":"","protocol":"","source":"/click","queryKey":{},"chunks":["click"]},"urlOriginal":"/session/2f4dacf0-e697-11e8-9c43-c3b00da4d9bb/element/:wdc:1542039770184/click"}}
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'OVI', ip: '10.0.75.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_181'
+Driver info: driver.version: unknown
+
+Then I should see the main-categories "SONNEN"(| SONNEN |  | sonnenpflege |)  Time elapsed: 0.001 sec  <<< FAILURE!
+java.lang.AssertionError
+
+| SONNEN |  | sonnenpflege |  Time elapsed: 0.001 sec  <<< FAILURE!
+java.lang.AssertionError
+
+Then I should see the main-categories "FOR MEN"(| FOR MEN |  | herrenpflege |)  Time elapsed: 0.001 sec  <<< FAILURE!
+java.lang.AssertionError
+
+| FOR MEN |  | herrenpflege |  Time elapsed: 0.001 sec  <<< FAILURE!
+java.lang.AssertionError
+
+Then I should see the main-categories "TOP MARKEN"(| TOP MARKEN |  | marken |)  Time elapsed: 0.001 sec  <<< FAILURE!
+java.lang.AssertionError
+
+| TOP MARKEN |  | marken |  Time elapsed: 0.001 sec  <<< FAILURE!
+java.lang.AssertionError
+
+Then I should see the main-categories "SPECIALS"(| SPECIALS |  | specials |)  Time elapsed: 0.001 sec  <<< ERROR!
+org.openqa.selenium.ElementNotVisibleException: 
+{"errorMessage":"Element is not currently visible and may not be manipulated","request":{"headers":{"Accept-Encoding":"gzip","Connection":"Keep-Alive","Content-Length":"32","Content-Type":"application/json; charset=utf-8","Host":"localhost:18831","User-Agent":"selenium/3.14.0 (java windows)"},"httpVersion":"1.1","method":"POST","post":"{\n  \"id\": \":wdc:1542039803507\"\n}","url":"/click","urlParsed":{"anchor":"","query":"","file":"click","directory":"/","path":"/click","relative":"/click","port":"","host":"","password":"","user":"","userInfo":"","authority":"","protocol":"","source":"/click","queryKey":{},"chunks":["click"]},"urlOriginal":"/session/4343b100-e697-11e8-8cc1-a79cac53c209/element/:wdc:1542039803507/click"}}
+Command duration or timeout: 0 milliseconds
+Caused by: org.openqa.selenium.remote.ScreenshotException: Screen shot has been taken
+Caused by: org.openqa.selenium.ElementNotVisibleException: 
+{"errorMessage":"Element is not currently visible and may not be manipulated","request":{"headers":{"Accept-Encoding":"gzip","Connection":"Keep-Alive","Content-Length":"32","Content-Type":"application/json; charset=utf-8","Host":"localhost:18831","User-Agent":"selenium/3.14.0 (java windows)"},"httpVersion":"1.1","method":"POST","post":"{\n  \"id\": \":wdc:1542039803507\"\n}","url":"/click","urlParsed":{"anchor":"","query":"","file":"click","directory":"/","path":"/click","relative":"/click","port":"","host":"","password":"","user":"","userInfo":"","authority":"","protocol":"","source":"/click","queryKey":{},"chunks":["click"]},"urlOriginal":"/session/4343b100-e697-11e8-8cc1-a79cac53c209/element/:wdc:1542039803507/click"}}
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'OVI', ip: '10.0.75.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_181'
+Driver info: driver.version: unknown
+
+| SPECIALS |  | specials |  Time elapsed: 0.001 sec  <<< ERROR!
+org.openqa.selenium.ElementNotVisibleException: 
+{"errorMessage":"Element is not currently visible and may not be manipulated","request":{"headers":{"Accept-Encoding":"gzip","Connection":"Keep-Alive","Content-Length":"32","Content-Type":"application/json; charset=utf-8","Host":"localhost:18831","User-Agent":"selenium/3.14.0 (java windows)"},"httpVersion":"1.1","method":"POST","post":"{\n  \"id\": \":wdc:1542039803507\"\n}","url":"/click","urlParsed":{"anchor":"","query":"","file":"click","directory":"/","path":"/click","relative":"/click","port":"","host":"","password":"","user":"","userInfo":"","authority":"","protocol":"","source":"/click","queryKey":{},"chunks":["click"]},"urlOriginal":"/session/4343b100-e697-11e8-8cc1-a79cac53c209/element/:wdc:1542039803507/click"}}
+Command duration or timeout: 0 milliseconds
+Caused by: org.openqa.selenium.remote.ScreenshotException: Screen shot has been taken
+Caused by: org.openqa.selenium.ElementNotVisibleException: 
+{"errorMessage":"Element is not currently visible and may not be manipulated","request":{"headers":{"Accept-Encoding":"gzip","Connection":"Keep-Alive","Content-Length":"32","Content-Type":"application/json; charset=utf-8","Host":"localhost:18831","User-Agent":"selenium/3.14.0 (java windows)"},"httpVersion":"1.1","method":"POST","post":"{\n  \"id\": \":wdc:1542039803507\"\n}","url":"/click","urlParsed":{"anchor":"","query":"","file":"click","directory":"/","path":"/click","relative":"/click","port":"","host":"","password":"","user":"","userInfo":"","authority":"","protocol":"","source":"/click","queryKey":{},"chunks":["click"]},"urlOriginal":"/session/4343b100-e697-11e8-8cc1-a79cac53c209/element/:wdc:1542039803507/click"}}
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'OVI', ip: '10.0.75.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_181'
+Driver info: driver.version: unknown
+

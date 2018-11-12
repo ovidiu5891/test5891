@@ -1,0 +1,10 @@
+flaconi\shop\pageObject\CartPage.class
+flaconi\shop\pageObject\HomePage.class
+flaconi\shop\pageObject\ProductDetailPage.class
+flaconi\shop\pageObject\BasePage.class
+flaconi\shop\integration\cucumber\AbstractStepDefinition.class
+flaconi\shop\integration\cucumber\HomePageStepDefinition.class
+flaconi\shop\integration\cucumber\CartStepDefinition.class
+flaconi\shop\integration\cucumber\BaseUtil.class
+flaconi\shop\integration\cucumber\ProductDetailStepDefinition.class
+util\ConfigReader.class
