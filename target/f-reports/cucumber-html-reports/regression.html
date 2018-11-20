@@ -76,7 +76,7 @@ $(document).ready(function() {
           <tr class="info">
             <td>flaconiCucumber</td>
                           <td>1</td>
-                        <td>12 Nov 2018, 16:22</td>
+                        <td>20 Nov 2018, 16:22</td>
           </tr>
         </tbody>
       </table>
@@ -123,16 +123,16 @@ $(document).ready(function() {
         <tbody>
         <tr>
           <td class="tagname">@regression</td>
-                    <td  class="passed"    >8</td>
+                    <td  class="passed"    >9</td>
           <td >0</td>
-          <td class="total">8</td>
-          <td      class="passed"    >25</td>
+          <td class="total">9</td>
+          <td      class="passed"    >30</td>
           <td >0</td>
           <td >0</td>
           <td >0</td>
-          <td   class="undefined" >1</td>
-          <td class="total">26</td>
-          <td class="duration" data-value="2721792000">2s 721ms</td>
+          <td >0</td>
+          <td class="total">30</td>
+          <td class="duration" data-value="16777194000">16s 777ms</td>
           <td class="passed">Passed</td>
         </tr>
         </tbody>
@@ -152,13 +152,14 @@ $(document).ready(function() {
                   
 <div class="element">
       <div class="indention">
-      <a href="HomePage-feature.html">View Feature</a> <i>HomePage</i>
+      <a href="C--Users-Ovidiu-Workspace-5891-flaconiCucumber-src-test-resources-features-Cart-feature.html">View Feature</a> <i>Cart</i>
     </div>
   
   
 <div class="tags indention">
-       <a href="XLsliderBlock.html">@XLsliderBlock</a>
+       <a href="cart.html">@cart</a>
        <a href="regression.html">@regression</a>
+       <a href="smoke.html">@smoke</a>
   </div>
 
 
@@ -166,7 +167,7 @@ $(document).ready(function() {
     
 <div class="brief passed">
   <span class="keyword indention">Scenario</span>
-  <span class="name">Check if the XL slider block is displayed</span>
+  <span class="name">Empty Cart</span>
   
 
        <i class="chevron fa fa-fw"></i>
@@ -194,9 +195,9 @@ $(document).ready(function() {
               <div class="hook">
           <div class="brief passed">
             <span class="keyword indention">Before</span>
-                          <span class="location name">BaseUtil.setUp(Scenario)</span>
+                          <span class="location name">BaseUtil.goToHomePage(Scenario)</span>
                         
-  <span class="lead-duration duration">3s 350ms</span>
+  <span class="lead-duration duration">10s 822ms</span>
 
           </div>
 
@@ -209,9 +210,9 @@ $(document).ready(function() {
               <div class="hook">
           <div class="brief passed">
             <span class="keyword indention">Before</span>
-                          <span class="location name">BaseUtil.goToHomePage(Scenario)</span>
+                          <span class="location name">BaseUtil.setUp(Scenario)</span>
                         
-  <span class="lead-duration duration">7s 061ms</span>
+  <span class="lead-duration duration">000ms</span>
 
           </div>
 
@@ -244,9 +245,9 @@ $(document).ready(function() {
         
 <div class="brief passed">
   <span class="keyword indention">Given</span>
-  <span class="name">I should be on the page "home"</span>
+  <span class="name">I should see cart quantity as "0"</span>
   
-  <span class="lead-duration duration">031ms</span>
+  <span class="lead-duration duration">1s 188ms</span>
 
   </div>
 
@@ -264,10 +265,10 @@ $(document).ready(function() {
           <div class="step">
         
 <div class="brief passed">
-  <span class="keyword indention">Then</span>
-  <span class="name">I should see the "XL slider" block on the page</span>
+  <span class="keyword indention">When</span>
+  <span class="name">I click on the shopping cart button</span>
   
-  <span class="lead-duration duration">129ms</span>
+  <span class="lead-duration duration">1s 923ms</span>
 
   </div>
 
@@ -286,9 +287,93 @@ $(document).ready(function() {
         
 <div class="brief passed">
   <span class="keyword indention">And</span>
-  <span class="name">I should be able to scroll the images</span>
+  <span class="name">I should be on the Cart page</span>
   
-  <span class="lead-duration duration">182ms</span>
+  <span class="lead-duration duration">280ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">I should see empty cart message</span>
+  
+  <span class="lead-duration duration">534ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">I should see the recommended products</span>
+  
+  <span class="lead-duration duration">540ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">When</span>
+  <span class="name">I click here link</span>
+  
+  <span class="lead-duration duration">2s 631ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">I should be on the Home page</span>
+  
+  <span class="lead-duration duration">036ms</span>
 
   </div>
 
@@ -327,7 +412,7 @@ $(document).ready(function() {
             <span class="keyword indention">After</span>
                           <span class="location name">BaseUtil.tearDown(Scenario)</span>
                         
-  <span class="lead-duration duration">245ms</span>
+  <span class="lead-duration duration">088ms</span>
 
           </div>
 
@@ -346,12 +431,13 @@ $(document).ready(function() {
                   
 <div class="element">
       <div class="indention">
-      <a href="HomePage-feature.html">View Feature</a> <i>HomePage</i>
+      <a href="C--Users-Ovidiu-Workspace-5891-flaconiCucumber-src-test-resources-features-HomePage-feature_1.html">View Feature</a> <i>HomePage</i>
     </div>
   
   
 <div class="tags indention">
-       <a href="brandBlock.html">@brandBlock</a>
+       <a href="homepage.html">@homepage</a>
+       <a href="XLsliderBlock.html">@XLsliderBlock</a>
        <a href="regression.html">@regression</a>
   </div>
 
@@ -360,7 +446,7 @@ $(document).ready(function() {
     
 <div class="brief passed">
   <span class="keyword indention">Scenario</span>
-  <span class="name">Check if the Brands block is displayed</span>
+  <span class="name">Check if the XL slider block is displayed</span>
   
 
        <i class="chevron fa fa-fw"></i>
@@ -390,7 +476,7 @@ $(document).ready(function() {
             <span class="keyword indention">Before</span>
                           <span class="location name">BaseUtil.setUp(Scenario)</span>
                         
-  <span class="lead-duration duration">3s 449ms</span>
+  <span class="lead-duration duration">023ms</span>
 
           </div>
 
@@ -405,7 +491,7 @@ $(document).ready(function() {
             <span class="keyword indention">Before</span>
                           <span class="location name">BaseUtil.goToHomePage(Scenario)</span>
                         
-  <span class="lead-duration duration">7s 069ms</span>
+  <span class="lead-duration duration">10s 466ms</span>
 
           </div>
 
@@ -440,7 +526,7 @@ $(document).ready(function() {
   <span class="keyword indention">Given</span>
   <span class="name">I should be on the page "home"</span>
   
-  <span class="lead-duration duration">026ms</span>
+  <span class="lead-duration duration">696ms</span>
 
   </div>
 
@@ -459,9 +545,9 @@ $(document).ready(function() {
         
 <div class="brief passed">
   <span class="keyword indention">Then</span>
-  <span class="name">I should see the "Brand" block on the page</span>
+  <span class="name">I should see the "XL slider" block on the page</span>
   
-  <span class="lead-duration duration">128ms</span>
+  <span class="lead-duration duration">570ms</span>
 
   </div>
 
@@ -480,30 +566,9 @@ $(document).ready(function() {
         
 <div class="brief passed">
   <span class="keyword indention">And</span>
-  <span class="name">I should be able to scroll through the brands</span>
+  <span class="name">I should be able to scroll the images</span>
   
-  <span class="lead-duration duration">284ms</span>
-
-  </div>
-
-        
-
-
-        
-        
-
-        
-
-        
-
-      </div>
-          <div class="step">
-        
-<div class="brief passed">
-  <span class="keyword indention">And</span>
-  <span class="name">I click the Alle Marken button</span>
-  
-  <span class="lead-duration duration">363ms</span>
+  <span class="lead-duration duration">850ms</span>
 
   </div>
 
@@ -542,7 +607,7 @@ $(document).ready(function() {
             <span class="keyword indention">After</span>
                           <span class="location name">BaseUtil.tearDown(Scenario)</span>
                         
-  <span class="lead-duration duration">067ms</span>
+  <span class="lead-duration duration">157ms</span>
 
           </div>
 
@@ -561,12 +626,13 @@ $(document).ready(function() {
                   
 <div class="element">
       <div class="indention">
-      <a href="HomePage-feature.html">View Feature</a> <i>HomePage</i>
+      <a href="C--Users-Ovidiu-Workspace-5891-flaconiCucumber-src-test-resources-features-HomePage-feature_1.html">View Feature</a> <i>HomePage</i>
     </div>
   
   
 <div class="tags indention">
-       <a href="aboutBlock.html">@aboutBlock</a>
+       <a href="homepage.html">@homepage</a>
+       <a href="brandBlock.html">@brandBlock</a>
        <a href="regression.html">@regression</a>
   </div>
 
@@ -575,7 +641,7 @@ $(document).ready(function() {
     
 <div class="brief passed">
   <span class="keyword indention">Scenario</span>
-  <span class="name">Check if the About Flaconi block is displayed</span>
+  <span class="name">Check if the Brand block is displayed</span>
   
 
        <i class="chevron fa fa-fw"></i>
@@ -605,7 +671,7 @@ $(document).ready(function() {
             <span class="keyword indention">Before</span>
                           <span class="location name">BaseUtil.setUp(Scenario)</span>
                         
-  <span class="lead-duration duration">3s 775ms</span>
+  <span class="lead-duration duration">000ms</span>
 
           </div>
 
@@ -620,7 +686,7 @@ $(document).ready(function() {
             <span class="keyword indention">Before</span>
                           <span class="location name">BaseUtil.goToHomePage(Scenario)</span>
                         
-  <span class="lead-duration duration">7s 182ms</span>
+  <span class="lead-duration duration">4s 842ms</span>
 
           </div>
 
@@ -655,7 +721,7 @@ $(document).ready(function() {
   <span class="keyword indention">Given</span>
   <span class="name">I should be on the page "home"</span>
   
-  <span class="lead-duration duration">017ms</span>
+  <span class="lead-duration duration">072ms</span>
 
   </div>
 
@@ -674,9 +740,9 @@ $(document).ready(function() {
         
 <div class="brief passed">
   <span class="keyword indention">Then</span>
-  <span class="name">I should see the "About Flaconi" block on the page</span>
+  <span class="name">I should see the "Brand" block on the page</span>
   
-  <span class="lead-duration duration">092ms</span>
+  <span class="lead-duration duration">312ms</span>
 
   </div>
 
@@ -695,9 +761,30 @@ $(document).ready(function() {
         
 <div class="brief passed">
   <span class="keyword indention">And</span>
-  <span class="name">I should see the block title as "Flaconi"</span>
+  <span class="name">I should be able to scroll through the brands</span>
   
-  <span class="lead-duration duration">182ms</span>
+  <span class="lead-duration duration">619ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">I click the Alle Marken button</span>
+  
+  <span class="lead-duration duration">660ms</span>
 
   </div>
 
@@ -736,7 +823,7 @@ $(document).ready(function() {
             <span class="keyword indention">After</span>
                           <span class="location name">BaseUtil.tearDown(Scenario)</span>
                         
-  <span class="lead-duration duration">2s 197ms</span>
+  <span class="lead-duration duration">147ms</span>
 
           </div>
 
@@ -755,12 +842,12 @@ $(document).ready(function() {
                   
 <div class="element">
       <div class="indention">
-      <a href="HomePage-feature.html">View Feature</a> <i>HomePage</i>
+      <a href="C--Users-Ovidiu-Workspace-5891-flaconiCucumber-src-test-resources-features-HomePage-feature_1.html">View Feature</a> <i>HomePage</i>
     </div>
   
   
 <div class="tags indention">
-       <a href="followBlock.html">@followBlock</a>
+       <a href="brandProductDisplayBlock.html">@brandProductDisplayBlock</a>
        <a href="regression.html">@regression</a>
   </div>
 
@@ -769,7 +856,7 @@ $(document).ready(function() {
     
 <div class="brief passed">
   <span class="keyword indention">Scenario</span>
-  <span class="name">Check if the Follow Flaconi block is displayed</span>
+  <span class="name">Check if the About Flaconi block is displayed</span>
   
 
        <i class="chevron fa fa-fw"></i>
@@ -799,7 +886,7 @@ $(document).ready(function() {
             <span class="keyword indention">Before</span>
                           <span class="location name">BaseUtil.setUp(Scenario)</span>
                         
-  <span class="lead-duration duration">3s 506ms</span>
+  <span class="lead-duration duration">000ms</span>
 
           </div>
 
@@ -814,7 +901,7 @@ $(document).ready(function() {
             <span class="keyword indention">Before</span>
                           <span class="location name">BaseUtil.goToHomePage(Scenario)</span>
                         
-  <span class="lead-duration duration">5s 478ms</span>
+  <span class="lead-duration duration">5s 067ms</span>
 
           </div>
 
@@ -849,7 +936,7 @@ $(document).ready(function() {
   <span class="keyword indention">Given</span>
   <span class="name">I should be on the page "home"</span>
   
-  <span class="lead-duration duration">022ms</span>
+  <span class="lead-duration duration">038ms</span>
 
   </div>
 
@@ -868,30 +955,9 @@ $(document).ready(function() {
         
 <div class="brief passed">
   <span class="keyword indention">Then</span>
-  <span class="name">I should see the "Follow Flaconi" block on the page</span>
+  <span class="name">I should see the "Brand Product Display" block on the page</span>
   
-  <span class="lead-duration duration">083ms</span>
-
-  </div>
-
-        
-
-
-        
-        
-
-        
-
-        
-
-      </div>
-          <div class="step">
-        
-<div class="brief passed">
-  <span class="keyword indention">And</span>
-  <span class="name">I should see the block title as "Flaconi folgen"</span>
-  
-  <span class="lead-duration duration">132ms</span>
+  <span class="lead-duration duration">434ms</span>
 
   </div>
 
@@ -930,7 +996,7 @@ $(document).ready(function() {
             <span class="keyword indention">After</span>
                           <span class="location name">BaseUtil.tearDown(Scenario)</span>
                         
-  <span class="lead-duration duration">2s 106ms</span>
+  <span class="lead-duration duration">086ms</span>
 
           </div>
 
@@ -949,12 +1015,12 @@ $(document).ready(function() {
                   
 <div class="element">
       <div class="indention">
-      <a href="HomePage-feature.html">View Feature</a> <i>HomePage</i>
+      <a href="C--Users-Ovidiu-Workspace-5891-flaconiCucumber-src-test-resources-features-HomePage-feature_1.html">View Feature</a> <i>HomePage</i>
     </div>
   
   
 <div class="tags indention">
-       <a href="customerServiceBlock.html">@customerServiceBlock</a>
+       <a href="homepage.html">@homepage</a>
        <a href="regression.html">@regression</a>
   </div>
 
@@ -963,7 +1029,7 @@ $(document).ready(function() {
     
 <div class="brief passed">
   <span class="keyword indention">Scenario</span>
-  <span class="name">Check if the Customer Service block is displayed</span>
+  <span class="name">Check if the Follow Flaconi block is displayed</span>
   
 
        <i class="chevron fa fa-fw"></i>
@@ -993,7 +1059,7 @@ $(document).ready(function() {
             <span class="keyword indention">Before</span>
                           <span class="location name">BaseUtil.setUp(Scenario)</span>
                         
-  <span class="lead-duration duration">3s 379ms</span>
+  <span class="lead-duration duration">000ms</span>
 
           </div>
 
@@ -1008,7 +1074,7 @@ $(document).ready(function() {
             <span class="keyword indention">Before</span>
                           <span class="location name">BaseUtil.goToHomePage(Scenario)</span>
                         
-  <span class="lead-duration duration">7s 473ms</span>
+  <span class="lead-duration duration">9s 932ms</span>
 
           </div>
 
@@ -1026,7 +1092,7 @@ $(document).ready(function() {
 <div class="steps inner-level">
     <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-19">
     
-<div class="brief failed">
+<div class="brief passed">
   <span class="keyword indention">Steps</span>
   <span class="name"></span>
   
@@ -1043,7 +1109,7 @@ $(document).ready(function() {
   <span class="keyword indention">Given</span>
   <span class="name">I should be on the page "home"</span>
   
-  <span class="lead-duration duration">042ms</span>
+  <span class="lead-duration duration">032ms</span>
 
   </div>
 
@@ -1062,9 +1128,9 @@ $(document).ready(function() {
         
 <div class="brief passed">
   <span class="keyword indention">Then</span>
-  <span class="name">I should see the "Customer Service" block on the page</span>
+  <span class="name">I should see the "Follow Flaconi" block on the page</span>
   
-  <span class="lead-duration duration">101ms</span>
+  <span class="lead-duration duration">326ms</span>
 
   </div>
 
@@ -1083,30 +1149,9 @@ $(document).ready(function() {
         
 <div class="brief passed">
   <span class="keyword indention">And</span>
-  <span class="name">I should see the block title as "Kundenservice"</span>
+  <span class="name">I should see the block title as "Flaconi folgen"</span>
   
-  <span class="lead-duration duration">208ms</span>
-
-  </div>
-
-        
-
-
-        
-        
-
-        
-
-        
-
-      </div>
-          <div class="step">
-        
-<div class="brief undefined">
-  <span class="keyword indention">And</span>
-  <span class="name">I check that there are 4 links displayed</span>
-  
-  <span class="lead-duration duration">000ms</span>
+  <span class="lead-duration duration">467ms</span>
 
   </div>
 
@@ -1145,7 +1190,7 @@ $(document).ready(function() {
             <span class="keyword indention">After</span>
                           <span class="location name">BaseUtil.tearDown(Scenario)</span>
                         
-  <span class="lead-duration duration">2s 399ms</span>
+  <span class="lead-duration duration">076ms</span>
 
           </div>
 
@@ -1164,12 +1209,12 @@ $(document).ready(function() {
                   
 <div class="element">
       <div class="indention">
-      <a href="HomePage-feature.html">View Feature</a> <i>HomePage</i>
+      <a href="C--Users-Ovidiu-Workspace-5891-flaconiCucumber-src-test-resources-features-HomePage-feature_1.html">View Feature</a> <i>HomePage</i>
     </div>
   
   
 <div class="tags indention">
-       <a href="newsLetterBlock.html">@newsLetterBlock</a>
+       <a href="homepage.html">@homepage</a>
        <a href="regression.html">@regression</a>
   </div>
 
@@ -1178,7 +1223,7 @@ $(document).ready(function() {
     
 <div class="brief passed">
   <span class="keyword indention">Scenario</span>
-  <span class="name">Check if the Newsletter block is displayed</span>
+  <span class="name">Check if the Customer Service block is displayed</span>
   
 
        <i class="chevron fa fa-fw"></i>
@@ -1208,7 +1253,7 @@ $(document).ready(function() {
             <span class="keyword indention">Before</span>
                           <span class="location name">BaseUtil.setUp(Scenario)</span>
                         
-  <span class="lead-duration duration">3s 387ms</span>
+  <span class="lead-duration duration">000ms</span>
 
           </div>
 
@@ -1223,7 +1268,7 @@ $(document).ready(function() {
             <span class="keyword indention">Before</span>
                           <span class="location name">BaseUtil.goToHomePage(Scenario)</span>
                         
-  <span class="lead-duration duration">5s 874ms</span>
+  <span class="lead-duration duration">4s 975ms</span>
 
           </div>
 
@@ -1258,7 +1303,7 @@ $(document).ready(function() {
   <span class="keyword indention">Given</span>
   <span class="name">I should be on the page "home"</span>
   
-  <span class="lead-duration duration">020ms</span>
+  <span class="lead-duration duration">533ms</span>
 
   </div>
 
@@ -1277,9 +1322,9 @@ $(document).ready(function() {
         
 <div class="brief passed">
   <span class="keyword indention">Then</span>
-  <span class="name">I should see the "Newsletter" block on the page</span>
+  <span class="name">I should see the "Customer Service" block on the page</span>
   
-  <span class="lead-duration duration">095ms</span>
+  <span class="lead-duration duration">547ms</span>
 
   </div>
 
@@ -1298,9 +1343,9 @@ $(document).ready(function() {
         
 <div class="brief passed">
   <span class="keyword indention">And</span>
-  <span class="name">I should see the block title as "Beauty News"</span>
+  <span class="name">I should see the block title as "Kundenservice"</span>
   
-  <span class="lead-duration duration">139ms</span>
+  <span class="lead-duration duration">361ms</span>
 
   </div>
 
@@ -1339,7 +1384,7 @@ $(document).ready(function() {
             <span class="keyword indention">After</span>
                           <span class="location name">BaseUtil.tearDown(Scenario)</span>
                         
-  <span class="lead-duration duration">242ms</span>
+  <span class="lead-duration duration">074ms</span>
 
           </div>
 
@@ -1358,12 +1403,12 @@ $(document).ready(function() {
                   
 <div class="element">
       <div class="indention">
-      <a href="HomePage-feature.html">View Feature</a> <i>HomePage</i>
+      <a href="C--Users-Ovidiu-Workspace-5891-flaconiCucumber-src-test-resources-features-HomePage-feature_1.html">View Feature</a> <i>HomePage</i>
     </div>
   
   
 <div class="tags indention">
-       <a href="paymentBlock.html">@paymentBlock</a>
+       <a href="homepage.html">@homepage</a>
        <a href="regression.html">@regression</a>
   </div>
 
@@ -1372,7 +1417,7 @@ $(document).ready(function() {
     
 <div class="brief passed">
   <span class="keyword indention">Scenario</span>
-  <span class="name">Check if the Payment block is displayed</span>
+  <span class="name">Check if the Newsletter block is displayed</span>
   
 
        <i class="chevron fa fa-fw"></i>
@@ -1402,7 +1447,7 @@ $(document).ready(function() {
             <span class="keyword indention">Before</span>
                           <span class="location name">BaseUtil.setUp(Scenario)</span>
                         
-  <span class="lead-duration duration">3s 386ms</span>
+  <span class="lead-duration duration">000ms</span>
 
           </div>
 
@@ -1417,7 +1462,7 @@ $(document).ready(function() {
             <span class="keyword indention">Before</span>
                           <span class="location name">BaseUtil.goToHomePage(Scenario)</span>
                         
-  <span class="lead-duration duration">8s 960ms</span>
+  <span class="lead-duration duration">5s 252ms</span>
 
           </div>
 
@@ -1452,7 +1497,7 @@ $(document).ready(function() {
   <span class="keyword indention">Given</span>
   <span class="name">I should be on the page "home"</span>
   
-  <span class="lead-duration duration">025ms</span>
+  <span class="lead-duration duration">094ms</span>
 
   </div>
 
@@ -1471,9 +1516,9 @@ $(document).ready(function() {
         
 <div class="brief passed">
   <span class="keyword indention">Then</span>
-  <span class="name">I should see the "Payment" block on the page</span>
+  <span class="name">I should see the "Newsletter" block on the page</span>
   
-  <span class="lead-duration duration">076ms</span>
+  <span class="lead-duration duration">240ms</span>
 
   </div>
 
@@ -1492,9 +1537,9 @@ $(document).ready(function() {
         
 <div class="brief passed">
   <span class="keyword indention">And</span>
-  <span class="name">I should see the block title as "Bequem bezahlen"</span>
+  <span class="name">I should see the block title as "Beauty News"</span>
   
-  <span class="lead-duration duration">096ms</span>
+  <span class="lead-duration duration">450ms</span>
 
   </div>
 
@@ -1533,7 +1578,7 @@ $(document).ready(function() {
             <span class="keyword indention">After</span>
                           <span class="location name">BaseUtil.tearDown(Scenario)</span>
                         
-  <span class="lead-duration duration">2s 319ms</span>
+  <span class="lead-duration duration">073ms</span>
 
           </div>
 
@@ -1552,12 +1597,12 @@ $(document).ready(function() {
                   
 <div class="element">
       <div class="indention">
-      <a href="HomePage-feature.html">View Feature</a> <i>HomePage</i>
+      <a href="C--Users-Ovidiu-Workspace-5891-flaconiCucumber-src-test-resources-features-HomePage-feature_1.html">View Feature</a> <i>HomePage</i>
     </div>
   
   
 <div class="tags indention">
-       <a href="trustlyCertifiedBlock.html">@trustlyCertifiedBlock</a>
+       <a href="homepage.html">@homepage</a>
        <a href="regression.html">@regression</a>
   </div>
 
@@ -1596,7 +1641,7 @@ $(document).ready(function() {
             <span class="keyword indention">Before</span>
                           <span class="location name">BaseUtil.setUp(Scenario)</span>
                         
-  <span class="lead-duration duration">3s 437ms</span>
+  <span class="lead-duration duration">000ms</span>
 
           </div>
 
@@ -1611,7 +1656,7 @@ $(document).ready(function() {
             <span class="keyword indention">Before</span>
                           <span class="location name">BaseUtil.goToHomePage(Scenario)</span>
                         
-  <span class="lead-duration duration">4s 453ms</span>
+  <span class="lead-duration duration">4s 836ms</span>
 
           </div>
 
@@ -1646,7 +1691,7 @@ $(document).ready(function() {
   <span class="keyword indention">Given</span>
   <span class="name">I should be on the page "home"</span>
   
-  <span class="lead-duration duration">016ms</span>
+  <span class="lead-duration duration">033ms</span>
 
   </div>
 
@@ -1667,7 +1712,7 @@ $(document).ready(function() {
   <span class="keyword indention">Then</span>
   <span class="name">I should see the "Trustly certified" block on the page</span>
   
-  <span class="lead-duration duration">095ms</span>
+  <span class="lead-duration duration">249ms</span>
 
   </div>
 
@@ -1688,7 +1733,7 @@ $(document).ready(function() {
   <span class="keyword indention">And</span>
   <span class="name">I should see the block title as "Sicherheit"</span>
   
-  <span class="lead-duration duration">124ms</span>
+  <span class="lead-duration duration">536ms</span>
 
   </div>
 
@@ -1727,7 +1772,181 @@ $(document).ready(function() {
             <span class="keyword indention">After</span>
                           <span class="location name">BaseUtil.tearDown(Scenario)</span>
                         
-  <span class="lead-duration duration">2s 079ms</span>
+  <span class="lead-duration duration">084ms</span>
+
+          </div>
+
+                      
+
+          
+          
+
+        </div>
+          </div>
+  </div>
+
+  </div>
+</div>
+
+                  
+<div class="element">
+      <div class="indention">
+      <a href="C--Users-Ovidiu-Workspace-5891-flaconiCucumber-src-test-resources-features-ProductCatalog-feature_2.html">View Feature</a> <i>Product Catalog</i>
+    </div>
+  
+  
+<div class="tags indention">
+       <a href="product_catalog.html">@product_catalog</a>
+       <a href="regression.html">@regression</a>
+       <a href="smoke.html">@smoke</a>
+  </div>
+
+
+    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-33">
+    
+<div class="brief passed">
+  <span class="keyword indention">Scenario</span>
+  <span class="name">Product Category Pages - products available</span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-33" class="collapse collapsable-details ">
+    
+  <div class="inner-level hooks-before">
+        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#before-34">
+      
+<div class="brief passed">
+  <span class="keyword indention">Hooks</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+    </div>
+
+    <div id="before-34" class="inner-level collapse collapsable-details ">
+              <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">Before</span>
+                          <span class="location name">BaseUtil.goToHomePage(Scenario)</span>
+                        
+  <span class="lead-duration duration">9s 680ms</span>
+
+          </div>
+
+                      
+
+          
+          
+
+        </div>
+              <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">Before</span>
+                          <span class="location name">BaseUtil.setUp(Scenario)</span>
+                        
+  <span class="lead-duration duration">000ms</span>
+
+          </div>
+
+                      
+
+          
+          
+
+        </div>
+          </div>
+  </div>
+
+
+    
+<div class="steps inner-level">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-35">
+    
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </div>
+
+  <div id="steps-35" class="inner-level collapse collapsable-details ">
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">I should be on the page "home"</span>
+  
+  <span class="lead-duration duration">710ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">I hover over the 3 "Pflege" category</span>
+  
+  <span class="lead-duration duration">802ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+      </div>
+</div>
+
+
+    
+  <div class="inner-level hooks-after">
+        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-36">
+      
+<div class="brief passed">
+  <span class="keyword indention">Hooks</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+    </div>
+
+    <div id="after-36" class="inner-level collapse collapsable-details ">
+              <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">After</span>
+                          <span class="location name">BaseUtil.tearDown(Scenario)</span>
+                        
+  <span class="lead-duration duration">090ms</span>
 
           </div>
 

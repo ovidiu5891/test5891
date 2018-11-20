@@ -27,6 +27,8 @@ public class HomePageStepDefinition extends AbstractStepDefinition {
 		home.checkMainCategoryPflege(mainCategory);
 	}
 	
+	
+	
 	@And("^I should be on the page \"([^\"]*)\"$")
 	public void i_should_be_on_the_page(String page) throws Throwable{
 		home = getInitializedPage(HomePage.class);
@@ -48,7 +50,7 @@ public class HomePageStepDefinition extends AbstractStepDefinition {
 	
 	//check block is displayed
 	@Then("^I should see the \"([^\"]*)\" block on the page$")
-	public void I_shoulld_see_the_payment_block(String block) throws Throwable{
+	public void I_shoulld_see_the_block(String block) throws Throwable{
 		home = getInitializedPage(HomePage.class);
 		home.checkBlockDisplayed(block);
 	}

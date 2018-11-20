@@ -32,7 +32,7 @@
 		<dependency>
 			<groupId>org.seleniumhq.selenium</groupId>
 			<artifactId>selenium-java</artifactId>
-			<version>3.14.0</version>
+			<version>3.4.0</version>
 		</dependency>
 
 		<dependency>
@@ -72,16 +72,13 @@
 			<version>3.19.0</version>
 		</dependency>
 
-		<!-- https://mvnrepository.com/artifact/com.codeborne/phantomjsdriver -->
-<dependency>
-    <groupId>com.codeborne</groupId>
-    <artifactId>phantomjsdriver</artifactId>
-    <version>1.4.4</version>
-</dependency>
-		
-		
+		<dependency>
+			<groupId>com.codeborne</groupId>
+			<artifactId>phantomjsdriver</artifactId>
+			<version>1.4.4</version>
+		</dependency>
 
-		
+
 
 
 
@@ -91,6 +88,71 @@
 
 		<plugins>
 
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-surefire-plugin</artifactId>
+				<version>2.18.1</version>
+				<configuration>
+					<forkCount>3</forkCount>
+					<reuseForks>true</reuseForks>
+					<includes>
+						<include>**/Parallel*IT.java</include>
+					</includes>
+				</configuration>
+			</plugin>
+
+
+			<plugin>
+				<groupId>com.github.temyers</groupId>
+				<artifactId>cucumber-jvm-parallel-plugin</artifactId>
+				<version>5.0.0</version>
+				<executions>
+					<execution>
+						<id>generateRunners</id>
+						<phase>generate-test-sources</phase>
+						<goals>
+							<goal>generateRunners</goal>
+						</goals>
+						<configuration>
+							<glue>
+								<package>flaconi.shop.integration.cucumber</package>
+							</glue>
+							<outputDirectory>target/generated-test-sources/cucumber</outputDirectory> <!-- runner will generate here -->
+							<featuresDirectory>src/test/resources/features/</featuresDirectory><!--Cucumber 
+								feature file location -->
+							<cucumberOutputDir>target/flaconi-cucumber-reports-json</cucumberOutputDir><!--Cucumber 
+								default reporting path -->
+							<plugins>
+								<plugin>
+									<!--The available options are junit, testng, html, pretty, json, 
+										usage and rerun -->
+									<name>json</name>
+									<extension>json</extension>
+									<!--Optional output directory. Overrides cucumberOutputDirectory. 
+										Usefull when different plugins create files with the same extension -->
+									<outputDirectory>target/flaconi-cucumber-reports-json/</outputDirectory>
+								</plugin>
+							</plugins>
+							<strict>true</strict>
+							<monochrome>true</monochrome>
+							<tags>
+								
+								<!-- <tag>@AddTwo</tag> -->
+							</tags>
+							<useTestNG>false</useTestNG>
+							<!-- The naming scheme to use for the generated test classes. One 
+								of ['simple', 'feature-title', 'pattern'] -->
+							<namingScheme>simple</namingScheme>
+							<!-- The class naming pattern to use. Only required/used if naming 
+								scheme is 'pattern'. -->
+							<namingPattern>Parallel{c}IT</namingPattern>
+							<!-- One of [SCENARIO, FEATURE]. SCENARIO generates one runner per 
+								scenario. FEATURE generates a runner per feature. -->
+							<parallelScheme>FEATURE</parallelScheme>
+						</configuration>
+					</execution>
+				</executions>
+			</plugin>
 
 
 			<plugin>
@@ -108,6 +170,7 @@
 				<artifactId>maven-compiler-plugin</artifactId>
 				<version>3.0</version>
 				<configuration>
+					<fork>true</fork>
 					<source>1.8</source>
 					<target>1.8</target>
 				</configuration>
@@ -137,6 +200,8 @@
 				</executions>
 			</plugin>
 		</plugins>
+
+
 
 	</build>
 

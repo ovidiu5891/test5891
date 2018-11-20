@@ -5,6 +5,7 @@ import java.net.URL;
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.Dimension;
+import org.openqa.selenium.Platform;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
@@ -12,11 +13,17 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.phantomjs.PhantomJSDriver;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
+
+import com.fasterxml.jackson.core.Version;
+import com.gargoylesoftware.htmlunit.BrowserVersion;
+import com.gargoylesoftware.htmlunit.javascript.configuration.BrowserName;
+
 import cucumber.api.Scenario;
 import cucumber.api.java.After;
 import cucumber.api.java.Before;
 import flaconi.shop.pageObject.CartPage;
 import flaconi.shop.pageObject.HomePage;
+import util.ConfigReader;
 
 /**
  * Scenario wrapper TODO do before and after hooks here!
@@ -26,11 +33,10 @@ import flaconi.shop.pageObject.HomePage;
  */
 public class BaseUtil {
 
-	public util.ConfigReader config;
+	public ConfigReader config;
 
 	private static ChromeOptions options = new ChromeOptions();
-	CartPage cart;
-	HomePage home;
+
 
 	public DesiredCapabilities caps;
 
@@ -64,7 +70,9 @@ public class BaseUtil {
 		} else if ((localBrowser = System.getProperty("browser")) !=null && localBrowser.equalsIgnoreCase("phantom")) {
 			System.setProperty("phantomjs.binary.path", "Drivers\\phantomjs-2.1.1-windows\\bin\\phantomjs.exe");
 			driver = new PhantomJSDriver();
+			driver.manage().window().maximize();
 			System.out.println("PhantomJS is initialized !!!" + localBrowser);
+			
 		}
 
 		else if ((localBrowser = System.getProperty("zalenium")) != null && localBrowser.equalsIgnoreCase("zalenium")) {
@@ -107,7 +115,19 @@ public class BaseUtil {
 			driver = new RemoteWebDriver(new URL(config.getKey("AWS_ZALENIUM")), dc);
 			driver.manage().window().maximize();
 			driver.get(config.getKey("PRODUCTION"));
+			
+			// PhantomJS 
+		} else if ((environment = System.getProperty("environment")) != null
+				&& environment.equalsIgnoreCase("phantom_testing")) {
+
+			
+			DesiredCapabilities dc = DesiredCapabilities.firefox();
+			driver = new RemoteWebDriver(new URL("http://localhost:4446/wd/hub"), dc);
+			
+			driver.manage().window().maximize();
+			driver.get(config.getKey("TESTING"));
 		}
+
 
 		else {
 
@@ -121,7 +141,7 @@ public class BaseUtil {
 	 */
 	@After
 	public void tearDown(Scenario scenario) throws Exception {
-		driver.close();
+		driver.quit();
 	}
 
 }

@@ -1,0 +1,163 @@
+[
+  {
+    "comments": [
+      {
+        "line": 1,
+        "value": "#Author:Ovidiu Badea"
+      }
+    ],
+    "line": 2,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 10822035500,
+              "status": "passed"
+            },
+            "match": {
+              "location": "BaseUtil.goToHomePage(Scenario)"
+            }
+          },
+          {
+            "result": {
+              "duration": 90900,
+              "status": "passed"
+            },
+            "match": {
+              "location": "BaseUtil.setUp(Scenario)"
+            }
+          }
+        ],
+        "line": 9,
+        "name": "Empty Cart",
+        "description": "",
+        "id": "cart;empty-cart",
+        "after": [
+          {
+            "result": {
+              "duration": 88531300,
+              "status": "passed"
+            },
+            "match": {
+              "location": "BaseUtil.tearDown(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1188802300,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "I should see cart quantity as \"0\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "0",
+                  "offset": 31
+                }
+              ],
+              "location": "CartStepDefinition.getCartQuantity(String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1923360500,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "I click on the shopping cart button",
+            "match": {
+              "location": "CartStepDefinition.I_click_on_the_shopping_cart_button()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 280993200,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "I should be on the Cart page",
+            "match": {
+              "location": "CartStepDefinition.I_should_be_on_the_cart_page()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 534365500,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "I should see empty cart message",
+            "match": {
+              "location": "CartStepDefinition.I_should_see_emppty_cart_message()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 540859800,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "I should see the recommended products",
+            "match": {
+              "location": "CartStepDefinition.I_should_see_the_recommended_products()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2631236700,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "I click here link",
+            "match": {
+              "location": "CartStepDefinition.I_click_here_link()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 36899400,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "I should be on the Home page",
+            "match": {
+              "location": "HomePageStepDefinition.i_am_on_the_home_page()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 8,
+            "name": "@cart"
+          },
+          {
+            "line": 8,
+            "name": "@regression"
+          },
+          {
+            "line": 8,
+            "name": "@smoke"
+          }
+        ]
+      }
+    ],
+    "name": "Cart",
+    "description": "\r\nAs a QA Engineer\r\nI want to add,update,delete products from cart page\r\nso that I can validate that cart functionality is working as expected",
+    "id": "cart",
+    "keyword": "Feature",
+    "uri": "C:/Users/Ovidiu/Workspace 5891/flaconiCucumber/src/test/resources/features/Cart.feature"
+  }
+]

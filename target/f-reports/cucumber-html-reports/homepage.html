@@ -76,7 +76,7 @@ $(document).ready(function() {
           <tr class="info">
             <td>flaconiCucumber</td>
                           <td>1</td>
-                        <td>12 Nov 2018, 17:23</td>
+                        <td>20 Nov 2018, 16:22</td>
           </tr>
         </tbody>
       </table>
@@ -123,17 +123,17 @@ $(document).ready(function() {
         <tbody>
         <tr>
           <td class="tagname">@homepage</td>
-                    <td >0</td>
-          <td  class="failed"    >6</td>
-          <td class="total">6</td>
-          <td      class="passed"    >12</td>
-          <td      class="failed"    >6</td>
-          <td     class="skipped"   >6</td>
+                    <td  class="passed"    >7</td>
+          <td >0</td>
+          <td class="total">7</td>
+          <td      class="passed"    >22</td>
           <td >0</td>
           <td >0</td>
-          <td class="total">24</td>
-          <td class="duration" data-value="4640251100">4s 640ms</td>
-          <td class="failed">Failed</td>
+          <td >0</td>
+          <td >0</td>
+          <td class="total">22</td>
+          <td class="duration" data-value="8171629300">8s 171ms</td>
+          <td class="passed">Passed</td>
         </tr>
         </tbody>
 
@@ -152,21 +152,22 @@ $(document).ready(function() {
                   
 <div class="element">
       <div class="indention">
-      <a href="HomePage-feature.html">View Feature</a> <i>HomePage</i>
+      <a href="C--Users-Ovidiu-Workspace-5891-flaconiCucumber-src-test-resources-features-HomePage-feature_1.html">View Feature</a> <i>HomePage</i>
     </div>
   
   
 <div class="tags indention">
        <a href="homepage.html">@homepage</a>
-       <a href="mainCategory.html">@mainCategory</a>
+       <a href="XLsliderBlock.html">@XLsliderBlock</a>
+       <a href="regression.html">@regression</a>
   </div>
 
 
-    <span data-toggle="collapse" class=" collapsable-control" data-target="#element-1">
+    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-1">
     
-<div class="brief failed">
-  <span class="keyword indention">Scenario Outline</span>
-  <span class="name">Checks the main-categories for Pfelge</span>
+<div class="brief passed">
+  <span class="keyword indention">Scenario</span>
+  <span class="name">Check if the XL slider block is displayed</span>
   
 
        <i class="chevron fa fa-fw"></i>
@@ -175,7 +176,7 @@ $(document).ready(function() {
   </span>
   <div class="description indention"></div>
 
-  <div id="element-1" class="collapse collapsable-details  in ">
+  <div id="element-1" class="collapse collapsable-details ">
     
   <div class="inner-level hooks-before">
         <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#before-2">
@@ -196,7 +197,7 @@ $(document).ready(function() {
             <span class="keyword indention">Before</span>
                           <span class="location name">BaseUtil.setUp(Scenario)</span>
                         
-  <span class="lead-duration duration">5s 115ms</span>
+  <span class="lead-duration duration">023ms</span>
 
           </div>
 
@@ -211,7 +212,7 @@ $(document).ready(function() {
             <span class="keyword indention">Before</span>
                           <span class="location name">BaseUtil.goToHomePage(Scenario)</span>
                         
-  <span class="lead-duration duration">4s 945ms</span>
+  <span class="lead-duration duration">10s 466ms</span>
 
           </div>
 
@@ -227,9 +228,9 @@ $(document).ready(function() {
 
     
 <div class="steps inner-level">
-    <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-3">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-3">
     
-<div class="brief failed">
+<div class="brief passed">
   <span class="keyword indention">Steps</span>
   <span class="name"></span>
   
@@ -239,14 +240,14 @@ $(document).ready(function() {
 
   </div>
 
-  <div id="steps-3" class="inner-level collapse collapsable-details  in ">
+  <div id="steps-3" class="inner-level collapse collapsable-details ">
           <div class="step">
         
 <div class="brief passed">
   <span class="keyword indention">Given</span>
   <span class="name">I should be on the page "home"</span>
   
-  <span class="lead-duration duration">223ms</span>
+  <span class="lead-duration duration">696ms</span>
 
   </div>
 
@@ -265,9 +266,9 @@ $(document).ready(function() {
         
 <div class="brief passed">
   <span class="keyword indention">Then</span>
-  <span class="name">I hover over the 3 "Pflege" category</span>
+  <span class="name">I should see the "XL slider" block on the page</span>
   
-  <span class="lead-duration duration">605ms</span>
+  <span class="lead-duration duration">570ms</span>
 
   </div>
 
@@ -284,49 +285,11 @@ $(document).ready(function() {
       </div>
           <div class="step">
         
-<div class="brief failed">
-  <span class="keyword indention">Then</span>
-  <span class="name">I should see the main-categories "GESICHT"</span>
-  
-  <span class="lead-duration duration">052ms</span>
-
-  </div>
-
-        
-
-  <div class="inner-level">
-    <div class="message indention">
-      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-4">
-          <a>Error message</a>
-      </div>
-      <div id="msg-4" class="collapse collapsable-details">
-        <pre>org.junit.ComparisonFailure: expected:<[]> but was:<[GESICHT]>
-	at org.junit.Assert.assertEquals(Assert.java:115)
-	at org.junit.Assert.assertEquals(Assert.java:144)
-	at flaconi.shop.pageObject.HomePage.checkMainCategoryPflege(HomePage.java:117)
-	at flaconi.shop.integration.cucumber.HomePageStepDefinition.i_should_see_the_mainCategory(HomePageStepDefinition.java:27)
-	at ✽.Then I should see the main-categories "GESICHT"(HomePage.feature:13)
-</pre>
-      </div>
-    </div>
-  </div>
-
-
-        
-        
-
-        
-
-        
-
-      </div>
-          <div class="step">
-        
-<div class="brief skipped">
+<div class="brief passed">
   <span class="keyword indention">And</span>
-  <span class="name">I should be on the page "gesichtspflege"</span>
+  <span class="name">I should be able to scroll the images</span>
   
-  <span class="lead-duration duration">000ms</span>
+  <span class="lead-duration duration">850ms</span>
 
   </div>
 
@@ -347,7 +310,7 @@ $(document).ready(function() {
 
     
   <div class="inner-level hooks-after">
-        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-5">
+        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-4">
       
 <div class="brief passed">
   <span class="keyword indention">Hooks</span>
@@ -359,13 +322,13 @@ $(document).ready(function() {
 
     </div>
 
-    <div id="after-5" class="inner-level collapse collapsable-details ">
+    <div id="after-4" class="inner-level collapse collapsable-details ">
               <div class="hook">
           <div class="brief passed">
             <span class="keyword indention">After</span>
                           <span class="location name">BaseUtil.tearDown(Scenario)</span>
                         
-  <span class="lead-duration duration">004ms</span>
+  <span class="lead-duration duration">157ms</span>
 
           </div>
 
@@ -384,21 +347,22 @@ $(document).ready(function() {
                   
 <div class="element">
       <div class="indention">
-      <a href="HomePage-feature.html">View Feature</a> <i>HomePage</i>
+      <a href="C--Users-Ovidiu-Workspace-5891-flaconiCucumber-src-test-resources-features-HomePage-feature_1.html">View Feature</a> <i>HomePage</i>
     </div>
   
   
 <div class="tags indention">
        <a href="homepage.html">@homepage</a>
-       <a href="mainCategory.html">@mainCategory</a>
+       <a href="brandBlock.html">@brandBlock</a>
+       <a href="regression.html">@regression</a>
   </div>
 
 
-    <span data-toggle="collapse" class=" collapsable-control" data-target="#element-6">
+    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-5">
     
-<div class="brief failed">
-  <span class="keyword indention">Scenario Outline</span>
-  <span class="name">Checks the main-categories for Pfelge</span>
+<div class="brief passed">
+  <span class="keyword indention">Scenario</span>
+  <span class="name">Check if the Brand block is displayed</span>
   
 
        <i class="chevron fa fa-fw"></i>
@@ -407,10 +371,10 @@ $(document).ready(function() {
   </span>
   <div class="description indention"></div>
 
-  <div id="element-6" class="collapse collapsable-details  in ">
+  <div id="element-5" class="collapse collapsable-details ">
     
   <div class="inner-level hooks-before">
-        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#before-7">
+        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#before-6">
       
 <div class="brief passed">
   <span class="keyword indention">Hooks</span>
@@ -422,13 +386,13 @@ $(document).ready(function() {
 
     </div>
 
-    <div id="before-7" class="inner-level collapse collapsable-details ">
+    <div id="before-6" class="inner-level collapse collapsable-details ">
               <div class="hook">
           <div class="brief passed">
             <span class="keyword indention">Before</span>
                           <span class="location name">BaseUtil.setUp(Scenario)</span>
                         
-  <span class="lead-duration duration">2s 213ms</span>
+  <span class="lead-duration duration">000ms</span>
 
           </div>
 
@@ -443,7 +407,7 @@ $(document).ready(function() {
             <span class="keyword indention">Before</span>
                           <span class="location name">BaseUtil.goToHomePage(Scenario)</span>
                         
-  <span class="lead-duration duration">5s 837ms</span>
+  <span class="lead-duration duration">4s 842ms</span>
 
           </div>
 
@@ -459,9 +423,9 @@ $(document).ready(function() {
 
     
 <div class="steps inner-level">
-    <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-8">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-7">
     
-<div class="brief failed">
+<div class="brief passed">
   <span class="keyword indention">Steps</span>
   <span class="name"></span>
   
@@ -471,14 +435,14 @@ $(document).ready(function() {
 
   </div>
 
-  <div id="steps-8" class="inner-level collapse collapsable-details  in ">
+  <div id="steps-7" class="inner-level collapse collapsable-details ">
           <div class="step">
         
 <div class="brief passed">
   <span class="keyword indention">Given</span>
   <span class="name">I should be on the page "home"</span>
   
-  <span class="lead-duration duration">013ms</span>
+  <span class="lead-duration duration">072ms</span>
 
   </div>
 
@@ -497,9 +461,9 @@ $(document).ready(function() {
         
 <div class="brief passed">
   <span class="keyword indention">Then</span>
-  <span class="name">I hover over the 3 "Pflege" category</span>
+  <span class="name">I should see the "Brand" block on the page</span>
   
-  <span class="lead-duration duration">592ms</span>
+  <span class="lead-duration duration">312ms</span>
 
   </div>
 
@@ -516,135 +480,32 @@ $(document).ready(function() {
       </div>
           <div class="step">
         
-<div class="brief failed">
-  <span class="keyword indention">Then</span>
-  <span class="name">I should see the main-categories "KORPER"</span>
-  
-  <span class="lead-duration duration">328ms</span>
-
-  </div>
-
-        
-
-  <div class="inner-level">
-    <div class="message indention">
-      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-9">
-          <a>Error message</a>
-      </div>
-      <div id="msg-9" class="collapse collapsable-details">
-        <pre>org.openqa.selenium.ElementNotVisibleException: {"errorMessage":"Element is not currently visible and may not be manipulated","request":{"headers":{"Accept-Encoding":"gzip","Connection":"Keep-Alive","Content-Length":"32","Content-Type":"application/json; charset=utf-8","Host":"localhost:8777","User-Agent":"selenium/3.14.0 (java windows)"},"httpVersion":"1.1","method":"POST","post":"{\n  \"id\": \":wdc:1542039770184\"\n}","url":"/click","urlParsed":{"anchor":"","query":"","file":"click","directory":"/","path":"/click","relative":"/click","port":"","host":"","password":"","user":"","userInfo":"","authority":"","protocol":"","source":"/click","queryKey":{},"chunks":["click"]},"urlOriginal":"/session/2f4dacf0-e697-11e8-9c43-c3b00da4d9bb/element/:wdc:1542039770184/click"}}
-Command duration or timeout: 0 milliseconds
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
-	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
-	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
-	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.phantomjs.PhantomJSCommandExecutor.execute(PhantomJSCommandExecutor.java:82)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:276)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:83)
-	at flaconi.shop.pageObject.HomePage.checkMainCategoryPflege(HomePage.java:122)
-	at flaconi.shop.integration.cucumber.HomePageStepDefinition.i_should_see_the_mainCategory(HomePageStepDefinition.java:27)
-	at ✽.Then I should see the main-categories "KORPER"(HomePage.feature:13)
-Caused by: org.openqa.selenium.remote.ScreenshotException: Screen shot has been taken
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:140)
-	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
-	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
-	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.phantomjs.PhantomJSCommandExecutor.execute(PhantomJSCommandExecutor.java:82)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:276)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:83)
-	at flaconi.shop.pageObject.HomePage.checkMainCategoryPflege(HomePage.java:122)
-	at flaconi.shop.integration.cucumber.HomePageStepDefinition.i_should_see_the_mainCategory(HomePageStepDefinition.java:27)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at cucumber.runtime.Utils$1.call(Utils.java:40)
-	at cucumber.runtime.Timeout.timeout(Timeout.java:16)
-	at cucumber.runtime.Utils.invoke(Utils.java:34)
-	at cucumber.runtime.java.JavaStepDefinition.execute(JavaStepDefinition.java:38)
-	at cucumber.runtime.StepDefinitionMatch.runStep(StepDefinitionMatch.java:37)
-	at cucumber.runtime.Runtime.runStep(Runtime.java:300)
-	at cucumber.runtime.model.StepContainer.runStep(StepContainer.java:44)
-	at cucumber.runtime.model.StepContainer.runSteps(StepContainer.java:39)
-	at cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:44)
-	at cucumber.runtime.junit.ExecutionUnitRunner.run(ExecutionUnitRunner.java:102)
-	at org.junit.runners.Suite.runChild(Suite.java:128)
-	at org.junit.runners.Suite.runChild(Suite.java:27)
-	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
-	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
-	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
-	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
-	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
-	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
-	at cucumber.runtime.junit.ExamplesRunner.run(ExamplesRunner.java:59)
-	at org.junit.runners.Suite.runChild(Suite.java:128)
-	at org.junit.runners.Suite.runChild(Suite.java:27)
-	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
-	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
-	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
-	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
-	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
-	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
-	at cucumber.runtime.junit.ScenarioOutlineRunner.run(ScenarioOutlineRunner.java:53)
-	at cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:63)
-	at cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:18)
-	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
-	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
-	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
-	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
-	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
-	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
-	at cucumber.runtime.junit.FeatureRunner.run(FeatureRunner.java:70)
-	at cucumber.api.junit.Cucumber.runChild(Cucumber.java:95)
-	at cucumber.api.junit.Cucumber.runChild(Cucumber.java:38)
-	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
-	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
-	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
-	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
-	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
-	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
-	at cucumber.api.junit.Cucumber.run(Cucumber.java:100)
-	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:367)
-	at org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:274)
-	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:238)
-	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:161)
-	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:290)
-	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:242)
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:121)
-Caused by: org.openqa.selenium.ElementNotVisibleException: {"errorMessage":"Element is not currently visible and may not be manipulated","request":{"headers":{"Accept-Encoding":"gzip","Connection":"Keep-Alive","Content-Length":"32","Content-Type":"application/json; charset=utf-8","Host":"localhost:8777","User-Agent":"selenium/3.14.0 (java windows)"},"httpVersion":"1.1","method":"POST","post":"{\n  \"id\": \":wdc:1542039770184\"\n}","url":"/click","urlParsed":{"anchor":"","query":"","file":"click","directory":"/","path":"/click","relative":"/click","port":"","host":"","password":"","user":"","userInfo":"","authority":"","protocol":"","source":"/click","queryKey":{},"chunks":["click"]},"urlOriginal":"/session/2f4dacf0-e697-11e8-9c43-c3b00da4d9bb/element/:wdc:1542039770184/click"}}
-Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
-System info: host: 'OVI', ip: '10.0.75.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_181'
-Driver info: driver.version: unknown
-</pre>
-      </div>
-    </div>
-  </div>
-
-
-        
-        
-
-        
-
-        
-
-      </div>
-          <div class="step">
-        
-<div class="brief skipped">
+<div class="brief passed">
   <span class="keyword indention">And</span>
-  <span class="name">I should be on the page "koerperpflege"</span>
+  <span class="name">I should be able to scroll through the brands</span>
   
-  <span class="lead-duration duration">000ms</span>
+  <span class="lead-duration duration">619ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">I click the Alle Marken button</span>
+  
+  <span class="lead-duration duration">660ms</span>
 
   </div>
 
@@ -665,7 +526,7 @@ Driver info: driver.version: unknown
 
     
   <div class="inner-level hooks-after">
-        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-10">
+        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-8">
       
 <div class="brief passed">
   <span class="keyword indention">Hooks</span>
@@ -677,13 +538,13 @@ Driver info: driver.version: unknown
 
     </div>
 
-    <div id="after-10" class="inner-level collapse collapsable-details ">
+    <div id="after-8" class="inner-level collapse collapsable-details ">
               <div class="hook">
           <div class="brief passed">
             <span class="keyword indention">After</span>
                           <span class="location name">BaseUtil.tearDown(Scenario)</span>
                         
-  <span class="lead-duration duration">003ms</span>
+  <span class="lead-duration duration">147ms</span>
 
           </div>
 
@@ -702,21 +563,22 @@ Driver info: driver.version: unknown
                   
 <div class="element">
       <div class="indention">
-      <a href="HomePage-feature.html">View Feature</a> <i>HomePage</i>
+      <a href="C--Users-Ovidiu-Workspace-5891-flaconiCucumber-src-test-resources-features-HomePage-feature_1.html">View Feature</a> <i>HomePage</i>
     </div>
   
   
 <div class="tags indention">
        <a href="homepage.html">@homepage</a>
-       <a href="mainCategory.html">@mainCategory</a>
+       <a href="regression.html">@regression</a>
+       <a href="smoke.html">@smoke</a>
   </div>
 
 
-    <span data-toggle="collapse" class=" collapsable-control" data-target="#element-11">
+    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-9">
     
-<div class="brief failed">
-  <span class="keyword indention">Scenario Outline</span>
-  <span class="name">Checks the main-categories for Pfelge</span>
+<div class="brief passed">
+  <span class="keyword indention">Scenario</span>
+  <span class="name">Check if the About Flaconi block is displayed</span>
   
 
        <i class="chevron fa fa-fw"></i>
@@ -725,10 +587,10 @@ Driver info: driver.version: unknown
   </span>
   <div class="description indention"></div>
 
-  <div id="element-11" class="collapse collapsable-details  in ">
+  <div id="element-9" class="collapse collapsable-details ">
     
   <div class="inner-level hooks-before">
-        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#before-12">
+        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#before-10">
       
 <div class="brief passed">
   <span class="keyword indention">Hooks</span>
@@ -740,13 +602,13 @@ Driver info: driver.version: unknown
 
     </div>
 
-    <div id="before-12" class="inner-level collapse collapsable-details ">
+    <div id="before-10" class="inner-level collapse collapsable-details ">
               <div class="hook">
           <div class="brief passed">
             <span class="keyword indention">Before</span>
                           <span class="location name">BaseUtil.setUp(Scenario)</span>
                         
-  <span class="lead-duration duration">2s 203ms</span>
+  <span class="lead-duration duration">000ms</span>
 
           </div>
 
@@ -761,7 +623,7 @@ Driver info: driver.version: unknown
             <span class="keyword indention">Before</span>
                           <span class="location name">BaseUtil.goToHomePage(Scenario)</span>
                         
-  <span class="lead-duration duration">6s 112ms</span>
+  <span class="lead-duration duration">4s 460ms</span>
 
           </div>
 
@@ -777,9 +639,9 @@ Driver info: driver.version: unknown
 
     
 <div class="steps inner-level">
-    <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-13">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-11">
     
-<div class="brief failed">
+<div class="brief passed">
   <span class="keyword indention">Steps</span>
   <span class="name"></span>
   
@@ -789,14 +651,14 @@ Driver info: driver.version: unknown
 
   </div>
 
-  <div id="steps-13" class="inner-level collapse collapsable-details  in ">
+  <div id="steps-11" class="inner-level collapse collapsable-details ">
           <div class="step">
         
 <div class="brief passed">
   <span class="keyword indention">Given</span>
   <span class="name">I should be on the page "home"</span>
   
-  <span class="lead-duration duration">016ms</span>
+  <span class="lead-duration duration">032ms</span>
 
   </div>
 
@@ -815,9 +677,9 @@ Driver info: driver.version: unknown
         
 <div class="brief passed">
   <span class="keyword indention">Then</span>
-  <span class="name">I hover over the 3 "Pflege" category</span>
+  <span class="name">I should see the "About Flaconi" block on the page</span>
   
-  <span class="lead-duration duration">582ms</span>
+  <span class="lead-duration duration">143ms</span>
 
   </div>
 
@@ -834,50 +696,11 @@ Driver info: driver.version: unknown
       </div>
           <div class="step">
         
-<div class="brief failed">
-  <span class="keyword indention">Then</span>
-  <span class="name">I should see the main-categories "SONNEN"</span>
-  
-  <span class="lead-duration duration">040ms</span>
-
-  </div>
-
-        
-
-  <div class="inner-level">
-    <div class="message indention">
-      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-14">
-          <a>Error message</a>
-      </div>
-      <div id="msg-14" class="collapse collapsable-details">
-        <pre>java.lang.AssertionError
-	at org.junit.Assert.fail(Assert.java:86)
-	at org.junit.Assert.assertTrue(Assert.java:41)
-	at org.junit.Assert.assertTrue(Assert.java:52)
-	at flaconi.shop.pageObject.HomePage.checkMainCategoryPflege(HomePage.java:125)
-	at flaconi.shop.integration.cucumber.HomePageStepDefinition.i_should_see_the_mainCategory(HomePageStepDefinition.java:27)
-	at ✽.Then I should see the main-categories "SONNEN"(HomePage.feature:13)
-</pre>
-      </div>
-    </div>
-  </div>
-
-
-        
-        
-
-        
-
-        
-
-      </div>
-          <div class="step">
-        
-<div class="brief skipped">
+<div class="brief passed">
   <span class="keyword indention">And</span>
-  <span class="name">I should be on the page "sonnenpflege"</span>
+  <span class="name">I should see the block title as "Flaconi"</span>
   
-  <span class="lead-duration duration">000ms</span>
+  <span class="lead-duration duration">341ms</span>
 
   </div>
 
@@ -898,7 +721,7 @@ Driver info: driver.version: unknown
 
     
   <div class="inner-level hooks-after">
-        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-15">
+        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-12">
       
 <div class="brief passed">
   <span class="keyword indention">Hooks</span>
@@ -910,13 +733,13 @@ Driver info: driver.version: unknown
 
     </div>
 
-    <div id="after-15" class="inner-level collapse collapsable-details ">
+    <div id="after-12" class="inner-level collapse collapsable-details ">
               <div class="hook">
           <div class="brief passed">
             <span class="keyword indention">After</span>
                           <span class="location name">BaseUtil.tearDown(Scenario)</span>
                         
-  <span class="lead-duration duration">004ms</span>
+  <span class="lead-duration duration">152ms</span>
 
           </div>
 
@@ -935,21 +758,21 @@ Driver info: driver.version: unknown
                   
 <div class="element">
       <div class="indention">
-      <a href="HomePage-feature.html">View Feature</a> <i>HomePage</i>
+      <a href="C--Users-Ovidiu-Workspace-5891-flaconiCucumber-src-test-resources-features-HomePage-feature_1.html">View Feature</a> <i>HomePage</i>
     </div>
   
   
 <div class="tags indention">
        <a href="homepage.html">@homepage</a>
-       <a href="mainCategory.html">@mainCategory</a>
+       <a href="regression.html">@regression</a>
   </div>
 
 
-    <span data-toggle="collapse" class=" collapsable-control" data-target="#element-16">
+    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-13">
     
-<div class="brief failed">
-  <span class="keyword indention">Scenario Outline</span>
-  <span class="name">Checks the main-categories for Pfelge</span>
+<div class="brief passed">
+  <span class="keyword indention">Scenario</span>
+  <span class="name">Check if the Follow Flaconi block is displayed</span>
   
 
        <i class="chevron fa fa-fw"></i>
@@ -958,10 +781,10 @@ Driver info: driver.version: unknown
   </span>
   <div class="description indention"></div>
 
-  <div id="element-16" class="collapse collapsable-details  in ">
+  <div id="element-13" class="collapse collapsable-details ">
     
   <div class="inner-level hooks-before">
-        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#before-17">
+        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#before-14">
       
 <div class="brief passed">
   <span class="keyword indention">Hooks</span>
@@ -973,13 +796,13 @@ Driver info: driver.version: unknown
 
     </div>
 
-    <div id="before-17" class="inner-level collapse collapsable-details ">
+    <div id="before-14" class="inner-level collapse collapsable-details ">
               <div class="hook">
           <div class="brief passed">
             <span class="keyword indention">Before</span>
                           <span class="location name">BaseUtil.setUp(Scenario)</span>
                         
-  <span class="lead-duration duration">2s 195ms</span>
+  <span class="lead-duration duration">000ms</span>
 
           </div>
 
@@ -994,7 +817,7 @@ Driver info: driver.version: unknown
             <span class="keyword indention">Before</span>
                           <span class="location name">BaseUtil.goToHomePage(Scenario)</span>
                         
-  <span class="lead-duration duration">4s 693ms</span>
+  <span class="lead-duration duration">9s 932ms</span>
 
           </div>
 
@@ -1010,9 +833,9 @@ Driver info: driver.version: unknown
 
     
 <div class="steps inner-level">
-    <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-18">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-15">
     
-<div class="brief failed">
+<div class="brief passed">
   <span class="keyword indention">Steps</span>
   <span class="name"></span>
   
@@ -1022,14 +845,14 @@ Driver info: driver.version: unknown
 
   </div>
 
-  <div id="steps-18" class="inner-level collapse collapsable-details  in ">
+  <div id="steps-15" class="inner-level collapse collapsable-details ">
           <div class="step">
         
 <div class="brief passed">
   <span class="keyword indention">Given</span>
   <span class="name">I should be on the page "home"</span>
   
-  <span class="lead-duration duration">013ms</span>
+  <span class="lead-duration duration">032ms</span>
 
   </div>
 
@@ -1048,9 +871,9 @@ Driver info: driver.version: unknown
         
 <div class="brief passed">
   <span class="keyword indention">Then</span>
-  <span class="name">I hover over the 3 "Pflege" category</span>
+  <span class="name">I should see the "Follow Flaconi" block on the page</span>
   
-  <span class="lead-duration duration">580ms</span>
+  <span class="lead-duration duration">326ms</span>
 
   </div>
 
@@ -1067,50 +890,205 @@ Driver info: driver.version: unknown
       </div>
           <div class="step">
         
-<div class="brief failed">
-  <span class="keyword indention">Then</span>
-  <span class="name">I should see the main-categories "FOR MEN"</span>
-  
-  <span class="lead-duration duration">039ms</span>
-
-  </div>
-
-        
-
-  <div class="inner-level">
-    <div class="message indention">
-      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-19">
-          <a>Error message</a>
-      </div>
-      <div id="msg-19" class="collapse collapsable-details">
-        <pre>java.lang.AssertionError
-	at org.junit.Assert.fail(Assert.java:86)
-	at org.junit.Assert.assertTrue(Assert.java:41)
-	at org.junit.Assert.assertTrue(Assert.java:52)
-	at flaconi.shop.pageObject.HomePage.checkMainCategoryPflege(HomePage.java:129)
-	at flaconi.shop.integration.cucumber.HomePageStepDefinition.i_should_see_the_mainCategory(HomePageStepDefinition.java:27)
-	at ✽.Then I should see the main-categories "FOR MEN"(HomePage.feature:13)
-</pre>
-      </div>
-    </div>
-  </div>
-
-
-        
-        
-
-        
-
-        
-
-      </div>
-          <div class="step">
-        
-<div class="brief skipped">
+<div class="brief passed">
   <span class="keyword indention">And</span>
-  <span class="name">I should be on the page "herrenpflege"</span>
+  <span class="name">I should see the block title as "Flaconi folgen"</span>
   
+  <span class="lead-duration duration">467ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+      </div>
+</div>
+
+
+    
+  <div class="inner-level hooks-after">
+        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-16">
+      
+<div class="brief passed">
+  <span class="keyword indention">Hooks</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+    </div>
+
+    <div id="after-16" class="inner-level collapse collapsable-details ">
+              <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">After</span>
+                          <span class="location name">BaseUtil.tearDown(Scenario)</span>
+                        
+  <span class="lead-duration duration">076ms</span>
+
+          </div>
+
+                      
+
+          
+          
+
+        </div>
+          </div>
+  </div>
+
+  </div>
+</div>
+
+                  
+<div class="element">
+      <div class="indention">
+      <a href="C--Users-Ovidiu-Workspace-5891-flaconiCucumber-src-test-resources-features-HomePage-feature_1.html">View Feature</a> <i>HomePage</i>
+    </div>
+  
+  
+<div class="tags indention">
+       <a href="homepage.html">@homepage</a>
+       <a href="regression.html">@regression</a>
+  </div>
+
+
+    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-17">
+    
+<div class="brief passed">
+  <span class="keyword indention">Scenario</span>
+  <span class="name">Check if the Customer Service block is displayed</span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-17" class="collapse collapsable-details ">
+    
+  <div class="inner-level hooks-before">
+        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#before-18">
+      
+<div class="brief passed">
+  <span class="keyword indention">Hooks</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+    </div>
+
+    <div id="before-18" class="inner-level collapse collapsable-details ">
+              <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">Before</span>
+                          <span class="location name">BaseUtil.setUp(Scenario)</span>
+                        
   <span class="lead-duration duration">000ms</span>
+
+          </div>
+
+                      
+
+          
+          
+
+        </div>
+              <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">Before</span>
+                          <span class="location name">BaseUtil.goToHomePage(Scenario)</span>
+                        
+  <span class="lead-duration duration">4s 975ms</span>
+
+          </div>
+
+                      
+
+          
+          
+
+        </div>
+          </div>
+  </div>
+
+
+    
+<div class="steps inner-level">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-19">
+    
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </div>
+
+  <div id="steps-19" class="inner-level collapse collapsable-details ">
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">I should be on the page "home"</span>
+  
+  <span class="lead-duration duration">533ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">I should see the "Customer Service" block on the page</span>
+  
+  <span class="lead-duration duration">547ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">I should see the block title as "Kundenservice"</span>
+  
+  <span class="lead-duration duration">361ms</span>
 
   </div>
 
@@ -1149,7 +1127,7 @@ Driver info: driver.version: unknown
             <span class="keyword indention">After</span>
                           <span class="location name">BaseUtil.tearDown(Scenario)</span>
                         
-  <span class="lead-duration duration">003ms</span>
+  <span class="lead-duration duration">074ms</span>
 
           </div>
 
@@ -1168,21 +1146,21 @@ Driver info: driver.version: unknown
                   
 <div class="element">
       <div class="indention">
-      <a href="HomePage-feature.html">View Feature</a> <i>HomePage</i>
+      <a href="C--Users-Ovidiu-Workspace-5891-flaconiCucumber-src-test-resources-features-HomePage-feature_1.html">View Feature</a> <i>HomePage</i>
     </div>
   
   
 <div class="tags indention">
        <a href="homepage.html">@homepage</a>
-       <a href="mainCategory.html">@mainCategory</a>
+       <a href="regression.html">@regression</a>
   </div>
 
 
-    <span data-toggle="collapse" class=" collapsable-control" data-target="#element-21">
+    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-21">
     
-<div class="brief failed">
-  <span class="keyword indention">Scenario Outline</span>
-  <span class="name">Checks the main-categories for Pfelge</span>
+<div class="brief passed">
+  <span class="keyword indention">Scenario</span>
+  <span class="name">Check if the Newsletter block is displayed</span>
   
 
        <i class="chevron fa fa-fw"></i>
@@ -1191,7 +1169,7 @@ Driver info: driver.version: unknown
   </span>
   <div class="description indention"></div>
 
-  <div id="element-21" class="collapse collapsable-details  in ">
+  <div id="element-21" class="collapse collapsable-details ">
     
   <div class="inner-level hooks-before">
         <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#before-22">
@@ -1212,7 +1190,7 @@ Driver info: driver.version: unknown
             <span class="keyword indention">Before</span>
                           <span class="location name">BaseUtil.setUp(Scenario)</span>
                         
-  <span class="lead-duration duration">2s 195ms</span>
+  <span class="lead-duration duration">000ms</span>
 
           </div>
 
@@ -1227,7 +1205,7 @@ Driver info: driver.version: unknown
             <span class="keyword indention">Before</span>
                           <span class="location name">BaseUtil.goToHomePage(Scenario)</span>
                         
-  <span class="lead-duration duration">5s 134ms</span>
+  <span class="lead-duration duration">5s 252ms</span>
 
           </div>
 
@@ -1243,9 +1221,9 @@ Driver info: driver.version: unknown
 
     
 <div class="steps inner-level">
-    <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-23">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-23">
     
-<div class="brief failed">
+<div class="brief passed">
   <span class="keyword indention">Steps</span>
   <span class="name"></span>
   
@@ -1255,14 +1233,14 @@ Driver info: driver.version: unknown
 
   </div>
 
-  <div id="steps-23" class="inner-level collapse collapsable-details  in ">
+  <div id="steps-23" class="inner-level collapse collapsable-details ">
           <div class="step">
         
 <div class="brief passed">
   <span class="keyword indention">Given</span>
   <span class="name">I should be on the page "home"</span>
   
-  <span class="lead-duration duration">012ms</span>
+  <span class="lead-duration duration">094ms</span>
 
   </div>
 
@@ -1281,9 +1259,9 @@ Driver info: driver.version: unknown
         
 <div class="brief passed">
   <span class="keyword indention">Then</span>
-  <span class="name">I hover over the 3 "Pflege" category</span>
+  <span class="name">I should see the "Newsletter" block on the page</span>
   
-  <span class="lead-duration duration">580ms</span>
+  <span class="lead-duration duration">240ms</span>
 
   </div>
 
@@ -1300,50 +1278,11 @@ Driver info: driver.version: unknown
       </div>
           <div class="step">
         
-<div class="brief failed">
-  <span class="keyword indention">Then</span>
-  <span class="name">I should see the main-categories "TOP MARKEN"</span>
-  
-  <span class="lead-duration duration">038ms</span>
-
-  </div>
-
-        
-
-  <div class="inner-level">
-    <div class="message indention">
-      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-24">
-          <a>Error message</a>
-      </div>
-      <div id="msg-24" class="collapse collapsable-details">
-        <pre>java.lang.AssertionError
-	at org.junit.Assert.fail(Assert.java:86)
-	at org.junit.Assert.assertTrue(Assert.java:41)
-	at org.junit.Assert.assertTrue(Assert.java:52)
-	at flaconi.shop.pageObject.HomePage.checkMainCategoryPflege(HomePage.java:133)
-	at flaconi.shop.integration.cucumber.HomePageStepDefinition.i_should_see_the_mainCategory(HomePageStepDefinition.java:27)
-	at ✽.Then I should see the main-categories "TOP MARKEN"(HomePage.feature:13)
-</pre>
-      </div>
-    </div>
-  </div>
-
-
-        
-        
-
-        
-
-        
-
-      </div>
-          <div class="step">
-        
-<div class="brief skipped">
+<div class="brief passed">
   <span class="keyword indention">And</span>
-  <span class="name">I should be on the page "marken"</span>
+  <span class="name">I should see the block title as "Beauty News"</span>
   
-  <span class="lead-duration duration">000ms</span>
+  <span class="lead-duration duration">450ms</span>
 
   </div>
 
@@ -1364,7 +1303,7 @@ Driver info: driver.version: unknown
 
     
   <div class="inner-level hooks-after">
-        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-25">
+        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-24">
       
 <div class="brief passed">
   <span class="keyword indention">Hooks</span>
@@ -1376,13 +1315,13 @@ Driver info: driver.version: unknown
 
     </div>
 
-    <div id="after-25" class="inner-level collapse collapsable-details ">
+    <div id="after-24" class="inner-level collapse collapsable-details ">
               <div class="hook">
           <div class="brief passed">
             <span class="keyword indention">After</span>
                           <span class="location name">BaseUtil.tearDown(Scenario)</span>
                         
-  <span class="lead-duration duration">005ms</span>
+  <span class="lead-duration duration">073ms</span>
 
           </div>
 
@@ -1401,21 +1340,21 @@ Driver info: driver.version: unknown
                   
 <div class="element">
       <div class="indention">
-      <a href="HomePage-feature.html">View Feature</a> <i>HomePage</i>
+      <a href="C--Users-Ovidiu-Workspace-5891-flaconiCucumber-src-test-resources-features-HomePage-feature_1.html">View Feature</a> <i>HomePage</i>
     </div>
   
   
 <div class="tags indention">
        <a href="homepage.html">@homepage</a>
-       <a href="mainCategory.html">@mainCategory</a>
+       <a href="regression.html">@regression</a>
   </div>
 
 
-    <span data-toggle="collapse" class=" collapsable-control" data-target="#element-26">
+    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-25">
     
-<div class="brief failed">
-  <span class="keyword indention">Scenario Outline</span>
-  <span class="name">Checks the main-categories for Pfelge</span>
+<div class="brief passed">
+  <span class="keyword indention">Scenario</span>
+  <span class="name">Check if the Certified trustly block is displayed</span>
   
 
        <i class="chevron fa fa-fw"></i>
@@ -1424,10 +1363,10 @@ Driver info: driver.version: unknown
   </span>
   <div class="description indention"></div>
 
-  <div id="element-26" class="collapse collapsable-details  in ">
+  <div id="element-25" class="collapse collapsable-details ">
     
   <div class="inner-level hooks-before">
-        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#before-27">
+        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#before-26">
       
 <div class="brief passed">
   <span class="keyword indention">Hooks</span>
@@ -1439,13 +1378,13 @@ Driver info: driver.version: unknown
 
     </div>
 
-    <div id="before-27" class="inner-level collapse collapsable-details ">
+    <div id="before-26" class="inner-level collapse collapsable-details ">
               <div class="hook">
           <div class="brief passed">
             <span class="keyword indention">Before</span>
                           <span class="location name">BaseUtil.setUp(Scenario)</span>
                         
-  <span class="lead-duration duration">2s 206ms</span>
+  <span class="lead-duration duration">000ms</span>
 
           </div>
 
@@ -1460,7 +1399,7 @@ Driver info: driver.version: unknown
             <span class="keyword indention">Before</span>
                           <span class="location name">BaseUtil.goToHomePage(Scenario)</span>
                         
-  <span class="lead-duration duration">5s 668ms</span>
+  <span class="lead-duration duration">4s 836ms</span>
 
           </div>
 
@@ -1476,9 +1415,9 @@ Driver info: driver.version: unknown
 
     
 <div class="steps inner-level">
-    <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-28">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-27">
     
-<div class="brief failed">
+<div class="brief passed">
   <span class="keyword indention">Steps</span>
   <span class="name"></span>
   
@@ -1488,14 +1427,14 @@ Driver info: driver.version: unknown
 
   </div>
 
-  <div id="steps-28" class="inner-level collapse collapsable-details  in ">
+  <div id="steps-27" class="inner-level collapse collapsable-details ">
           <div class="step">
         
 <div class="brief passed">
   <span class="keyword indention">Given</span>
   <span class="name">I should be on the page "home"</span>
   
-  <span class="lead-duration duration">015ms</span>
+  <span class="lead-duration duration">033ms</span>
 
   </div>
 
@@ -1514,9 +1453,9 @@ Driver info: driver.version: unknown
         
 <div class="brief passed">
   <span class="keyword indention">Then</span>
-  <span class="name">I hover over the 3 "Pflege" category</span>
+  <span class="name">I should see the "Trustly certified" block on the page</span>
   
-  <span class="lead-duration duration">579ms</span>
+  <span class="lead-duration duration">249ms</span>
 
   </div>
 
@@ -1533,135 +1472,11 @@ Driver info: driver.version: unknown
       </div>
           <div class="step">
         
-<div class="brief failed">
-  <span class="keyword indention">Then</span>
-  <span class="name">I should see the main-categories "SPECIALS"</span>
-  
-  <span class="lead-duration duration">323ms</span>
-
-  </div>
-
-        
-
-  <div class="inner-level">
-    <div class="message indention">
-      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-29">
-          <a>Error message</a>
-      </div>
-      <div id="msg-29" class="collapse collapsable-details">
-        <pre>org.openqa.selenium.ElementNotVisibleException: {"errorMessage":"Element is not currently visible and may not be manipulated","request":{"headers":{"Accept-Encoding":"gzip","Connection":"Keep-Alive","Content-Length":"32","Content-Type":"application/json; charset=utf-8","Host":"localhost:18831","User-Agent":"selenium/3.14.0 (java windows)"},"httpVersion":"1.1","method":"POST","post":"{\n  \"id\": \":wdc:1542039803507\"\n}","url":"/click","urlParsed":{"anchor":"","query":"","file":"click","directory":"/","path":"/click","relative":"/click","port":"","host":"","password":"","user":"","userInfo":"","authority":"","protocol":"","source":"/click","queryKey":{},"chunks":["click"]},"urlOriginal":"/session/4343b100-e697-11e8-8cc1-a79cac53c209/element/:wdc:1542039803507/click"}}
-Command duration or timeout: 0 milliseconds
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
-	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
-	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
-	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.phantomjs.PhantomJSCommandExecutor.execute(PhantomJSCommandExecutor.java:82)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:276)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:83)
-	at flaconi.shop.pageObject.HomePage.checkMainCategoryPflege(HomePage.java:138)
-	at flaconi.shop.integration.cucumber.HomePageStepDefinition.i_should_see_the_mainCategory(HomePageStepDefinition.java:27)
-	at ✽.Then I should see the main-categories "SPECIALS"(HomePage.feature:13)
-Caused by: org.openqa.selenium.remote.ScreenshotException: Screen shot has been taken
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:140)
-	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
-	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
-	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.phantomjs.PhantomJSCommandExecutor.execute(PhantomJSCommandExecutor.java:82)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:276)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:83)
-	at flaconi.shop.pageObject.HomePage.checkMainCategoryPflege(HomePage.java:138)
-	at flaconi.shop.integration.cucumber.HomePageStepDefinition.i_should_see_the_mainCategory(HomePageStepDefinition.java:27)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at cucumber.runtime.Utils$1.call(Utils.java:40)
-	at cucumber.runtime.Timeout.timeout(Timeout.java:16)
-	at cucumber.runtime.Utils.invoke(Utils.java:34)
-	at cucumber.runtime.java.JavaStepDefinition.execute(JavaStepDefinition.java:38)
-	at cucumber.runtime.StepDefinitionMatch.runStep(StepDefinitionMatch.java:37)
-	at cucumber.runtime.Runtime.runStep(Runtime.java:300)
-	at cucumber.runtime.model.StepContainer.runStep(StepContainer.java:44)
-	at cucumber.runtime.model.StepContainer.runSteps(StepContainer.java:39)
-	at cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:44)
-	at cucumber.runtime.junit.ExecutionUnitRunner.run(ExecutionUnitRunner.java:102)
-	at org.junit.runners.Suite.runChild(Suite.java:128)
-	at org.junit.runners.Suite.runChild(Suite.java:27)
-	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
-	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
-	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
-	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
-	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
-	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
-	at cucumber.runtime.junit.ExamplesRunner.run(ExamplesRunner.java:59)
-	at org.junit.runners.Suite.runChild(Suite.java:128)
-	at org.junit.runners.Suite.runChild(Suite.java:27)
-	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
-	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
-	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
-	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
-	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
-	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
-	at cucumber.runtime.junit.ScenarioOutlineRunner.run(ScenarioOutlineRunner.java:53)
-	at cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:63)
-	at cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:18)
-	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
-	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
-	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
-	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
-	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
-	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
-	at cucumber.runtime.junit.FeatureRunner.run(FeatureRunner.java:70)
-	at cucumber.api.junit.Cucumber.runChild(Cucumber.java:95)
-	at cucumber.api.junit.Cucumber.runChild(Cucumber.java:38)
-	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
-	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
-	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
-	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
-	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
-	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
-	at cucumber.api.junit.Cucumber.run(Cucumber.java:100)
-	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:367)
-	at org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:274)
-	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:238)
-	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:161)
-	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:290)
-	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:242)
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:121)
-Caused by: org.openqa.selenium.ElementNotVisibleException: {"errorMessage":"Element is not currently visible and may not be manipulated","request":{"headers":{"Accept-Encoding":"gzip","Connection":"Keep-Alive","Content-Length":"32","Content-Type":"application/json; charset=utf-8","Host":"localhost:18831","User-Agent":"selenium/3.14.0 (java windows)"},"httpVersion":"1.1","method":"POST","post":"{\n  \"id\": \":wdc:1542039803507\"\n}","url":"/click","urlParsed":{"anchor":"","query":"","file":"click","directory":"/","path":"/click","relative":"/click","port":"","host":"","password":"","user":"","userInfo":"","authority":"","protocol":"","source":"/click","queryKey":{},"chunks":["click"]},"urlOriginal":"/session/4343b100-e697-11e8-8cc1-a79cac53c209/element/:wdc:1542039803507/click"}}
-Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
-System info: host: 'OVI', ip: '10.0.75.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_181'
-Driver info: driver.version: unknown
-</pre>
-      </div>
-    </div>
-  </div>
-
-
-        
-        
-
-        
-
-        
-
-      </div>
-          <div class="step">
-        
-<div class="brief skipped">
+<div class="brief passed">
   <span class="keyword indention">And</span>
-  <span class="name">I should be on the page "specials"</span>
+  <span class="name">I should see the block title as "Sicherheit"</span>
   
-  <span class="lead-duration duration">000ms</span>
+  <span class="lead-duration duration">536ms</span>
 
   </div>
 
@@ -1682,7 +1497,7 @@ Driver info: driver.version: unknown
 
     
   <div class="inner-level hooks-after">
-        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-30">
+        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-28">
       
 <div class="brief passed">
   <span class="keyword indention">Hooks</span>
@@ -1694,13 +1509,13 @@ Driver info: driver.version: unknown
 
     </div>
 
-    <div id="after-30" class="inner-level collapse collapsable-details ">
+    <div id="after-28" class="inner-level collapse collapsable-details ">
               <div class="hook">
           <div class="brief passed">
             <span class="keyword indention">After</span>
                           <span class="location name">BaseUtil.tearDown(Scenario)</span>
                         
-  <span class="lead-duration duration">005ms</span>
+  <span class="lead-duration duration">084ms</span>
 
           </div>
 

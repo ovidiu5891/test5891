@@ -1,0 +1,1067 @@
+[
+  {
+    "comments": [
+      {
+        "line": 1,
+        "value": "#Author:Ovidiu Badea"
+      }
+    ],
+    "line": 2,
+    "elements": [
+      {
+        "comments": [
+          {
+            "line": 26,
+            "value": "#Scenario Outline: Checks the main-categories for Parfum"
+          },
+          {
+            "line": 28,
+            "value": "#Given I hover over the 2 \"Parfum\" category"
+          },
+          {
+            "line": 29,
+            "value": "#Then I should see the main-categories \"\u003cParfum-main-category\u003e\""
+          },
+          {
+            "line": 30,
+            "value": "#And I should be on the page \"\u003cpage\u003e\""
+          },
+          {
+            "line": 33,
+            "value": "#Examples:"
+          },
+          {
+            "line": 35,
+            "value": "#|Parfum-main-category|\t\t\t\t|page|"
+          },
+          {
+            "line": 36,
+            "value": "#|DAMENPARFUM|\t\t\t\t\t\t|damenparfum|"
+          },
+          {
+            "line": 37,
+            "value": "#|HERRENPARFUM|\t\t\t\t\t\t|herrenparfum|"
+          },
+          {
+            "line": 38,
+            "value": "#|SONNEN|\t\t\t\t\t\t\t|sonnenpflege|"
+          },
+          {
+            "line": 39,
+            "value": "#|FOR MEN|\t\t\t\t\t\t\t|herrenpflege|"
+          },
+          {
+            "line": 40,
+            "value": "#|TOP MARKEN|\t\t\t\t\t\t|marken|"
+          },
+          {
+            "line": 41,
+            "value": "#|SPECIALS|\t\t\t\t\t\t\t|specials|"
+          },
+          {
+            "line": 43,
+            "value": "#@subCategory"
+          },
+          {
+            "line": 44,
+            "value": "#Scenario Outline: Checks the sub-category for Gesicht"
+          },
+          {
+            "line": 46,
+            "value": "#Given I hover over the 3 \"Pflege\" category"
+          },
+          {
+            "line": 47,
+            "value": "#And I should see the sub-categories \"\u003cGesicht-sub-category\u003e\""
+          },
+          {
+            "line": 49,
+            "value": "#Examples:"
+          },
+          {
+            "line": 50,
+            "value": "#|Gesicht-sub-category|"
+          },
+          {
+            "line": 51,
+            "value": "#|Reinigung|"
+          },
+          {
+            "line": 52,
+            "value": "#|Tagespflege|"
+          },
+          {
+            "line": 53,
+            "value": "#|Nachtpflege|"
+          },
+          {
+            "line": 54,
+            "value": "#|Augenpflege|"
+          },
+          {
+            "line": 55,
+            "value": "#|Maske \u0026 Peeling|"
+          },
+          {
+            "line": 56,
+            "value": "#|Serum \u0026 Kur|"
+          },
+          {
+            "line": 57,
+            "value": "#|Anti-Aging|"
+          },
+          {
+            "line": 58,
+            "value": "#|Lippenpflege|"
+          },
+          {
+            "line": 59,
+            "value": "#|Zahnpflege|"
+          },
+          {
+            "line": 60,
+            "value": "#|Gesichtsbursten|"
+          },
+          {
+            "line": 61,
+            "value": "#|Gesichtpflege-Sets|"
+          }
+        ],
+        "before": [
+          {
+            "result": {
+              "duration": 23203000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "BaseUtil.setUp(Scenario)"
+            }
+          },
+          {
+            "result": {
+              "duration": 10466571000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "BaseUtil.goToHomePage(Scenario)"
+            }
+          }
+        ],
+        "line": 66,
+        "name": "Check if the XL slider block is displayed",
+        "description": "",
+        "id": "homepage;check-if-the-xl-slider-block-is-displayed",
+        "after": [
+          {
+            "result": {
+              "duration": 157671300,
+              "status": "passed"
+            },
+            "match": {
+              "location": "BaseUtil.tearDown(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 696373700,
+              "status": "passed"
+            },
+            "line": 67,
+            "name": "I should be on the page \"home\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "home",
+                  "offset": 25
+                }
+              ],
+              "location": "HomePageStepDefinition.i_should_be_on_the_page(String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 570530300,
+              "status": "passed"
+            },
+            "line": 68,
+            "name": "I should see the \"XL slider\" block on the page",
+            "match": {
+              "arguments": [
+                {
+                  "val": "XL slider",
+                  "offset": 18
+                }
+              ],
+              "location": "HomePageStepDefinition.I_shoulld_see_the_block(String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 850109800,
+              "status": "passed"
+            },
+            "line": 69,
+            "name": "I should be able to scroll the images",
+            "match": {
+              "location": "HomePageStepDefinition.i_scroll_images()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "line": 65,
+            "name": "@homepage"
+          },
+          {
+            "line": 65,
+            "name": "@XLsliderBlock"
+          },
+          {
+            "line": 65,
+            "name": "@regression"
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 92800,
+              "status": "passed"
+            },
+            "match": {
+              "location": "BaseUtil.setUp(Scenario)"
+            }
+          },
+          {
+            "result": {
+              "duration": 4842289700,
+              "status": "passed"
+            },
+            "match": {
+              "location": "BaseUtil.goToHomePage(Scenario)"
+            }
+          }
+        ],
+        "line": 72,
+        "name": "Check if the Brand block is displayed",
+        "description": "",
+        "id": "homepage;check-if-the-brand-block-is-displayed",
+        "after": [
+          {
+            "result": {
+              "duration": 147151300,
+              "status": "passed"
+            },
+            "match": {
+              "location": "BaseUtil.tearDown(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 72490100,
+              "status": "passed"
+            },
+            "line": 73,
+            "name": "I should be on the page \"home\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "home",
+                  "offset": 25
+                }
+              ],
+              "location": "HomePageStepDefinition.i_should_be_on_the_page(String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 312408400,
+              "status": "passed"
+            },
+            "line": 74,
+            "name": "I should see the \"Brand\" block on the page",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Brand",
+                  "offset": 18
+                }
+              ],
+              "location": "HomePageStepDefinition.I_shoulld_see_the_block(String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 619140700,
+              "status": "passed"
+            },
+            "line": 75,
+            "name": "I should be able to scroll through the brands",
+            "match": {
+              "location": "HomePageStepDefinition.scroll_through_the_brands()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 660125000,
+              "status": "passed"
+            },
+            "line": 76,
+            "name": "I click the Alle Marken button",
+            "match": {
+              "location": "HomePageStepDefinition.click_Alle_Marken_button()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "line": 71,
+            "name": "@homepage"
+          },
+          {
+            "line": 71,
+            "name": "@brandBlock"
+          },
+          {
+            "line": 71,
+            "name": "@regression"
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 157400,
+              "status": "passed"
+            },
+            "match": {
+              "location": "BaseUtil.setUp(Scenario)"
+            }
+          },
+          {
+            "result": {
+              "duration": 4769068000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "BaseUtil.goToHomePage(Scenario)"
+            }
+          }
+        ],
+        "line": 79,
+        "name": "Check if the Brand block is displayed",
+        "description": "",
+        "id": "homepage;check-if-the-brand-block-is-displayed",
+        "after": [
+          {
+            "result": {
+              "duration": 172502300,
+              "status": "passed"
+            },
+            "match": {
+              "location": "BaseUtil.tearDown(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 52967400,
+              "status": "passed"
+            },
+            "line": 80,
+            "name": "I should be on the page \"home\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "home",
+                  "offset": 25
+                }
+              ],
+              "location": "HomePageStepDefinition.i_should_be_on_the_page(String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1127944000,
+              "status": "passed"
+            },
+            "line": 81,
+            "name": "I should see the \"Story\" block on the page",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Story",
+                  "offset": 18
+                }
+              ],
+              "location": "HomePageStepDefinition.I_shoulld_see_the_block(String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 78,
+            "name": "@storyBlock"
+          },
+          {
+            "line": 78,
+            "name": "@regression"
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 231100,
+              "status": "passed"
+            },
+            "match": {
+              "location": "BaseUtil.setUp(Scenario)"
+            }
+          },
+          {
+            "result": {
+              "duration": 5067678500,
+              "status": "passed"
+            },
+            "match": {
+              "location": "BaseUtil.goToHomePage(Scenario)"
+            }
+          }
+        ],
+        "line": 84,
+        "name": "Check if the About Flaconi block is displayed",
+        "description": "",
+        "id": "homepage;check-if-the-about-flaconi-block-is-displayed",
+        "after": [
+          {
+            "result": {
+              "duration": 86127900,
+              "status": "passed"
+            },
+            "match": {
+              "location": "BaseUtil.tearDown(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 38714700,
+              "status": "passed"
+            },
+            "line": 85,
+            "name": "I should be on the page \"home\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "home",
+                  "offset": 25
+                }
+              ],
+              "location": "HomePageStepDefinition.i_should_be_on_the_page(String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 434596900,
+              "status": "passed"
+            },
+            "line": 86,
+            "name": "I should see the \"Brand Product Display\" block on the page",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Brand Product Display",
+                  "offset": 18
+                }
+              ],
+              "location": "HomePageStepDefinition.I_shoulld_see_the_block(String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 83,
+            "name": "@brandProductDisplayBlock"
+          },
+          {
+            "line": 83,
+            "name": "@regression"
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 123800,
+              "status": "passed"
+            },
+            "match": {
+              "location": "BaseUtil.setUp(Scenario)"
+            }
+          },
+          {
+            "result": {
+              "duration": 4460111700,
+              "status": "passed"
+            },
+            "match": {
+              "location": "BaseUtil.goToHomePage(Scenario)"
+            }
+          }
+        ],
+        "line": 89,
+        "name": "Check if the About Flaconi block is displayed",
+        "description": "",
+        "id": "homepage;check-if-the-about-flaconi-block-is-displayed",
+        "after": [
+          {
+            "result": {
+              "duration": 152081200,
+              "status": "passed"
+            },
+            "match": {
+              "location": "BaseUtil.tearDown(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 32423400,
+              "status": "passed"
+            },
+            "line": 90,
+            "name": "I should be on the page \"home\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "home",
+                  "offset": 25
+                }
+              ],
+              "location": "HomePageStepDefinition.i_should_be_on_the_page(String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 143433500,
+              "status": "passed"
+            },
+            "line": 91,
+            "name": "I should see the \"About Flaconi\" block on the page",
+            "match": {
+              "arguments": [
+                {
+                  "val": "About Flaconi",
+                  "offset": 18
+                }
+              ],
+              "location": "HomePageStepDefinition.I_shoulld_see_the_block(String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 341835500,
+              "status": "passed"
+            },
+            "line": 92,
+            "name": "I should see the block title as \"Flaconi\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Flaconi",
+                  "offset": 33
+                }
+              ],
+              "location": "HomePageStepDefinition.getPaymentBlockTitle(String)"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "line": 88,
+            "name": "@homepage"
+          },
+          {
+            "line": 88,
+            "name": "@regression"
+          },
+          {
+            "line": 88,
+            "name": "@smoke"
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 112500,
+              "status": "passed"
+            },
+            "match": {
+              "location": "BaseUtil.setUp(Scenario)"
+            }
+          },
+          {
+            "result": {
+              "duration": 9932534100,
+              "status": "passed"
+            },
+            "match": {
+              "location": "BaseUtil.goToHomePage(Scenario)"
+            }
+          }
+        ],
+        "line": 95,
+        "name": "Check if the Follow Flaconi block is displayed",
+        "description": "",
+        "id": "homepage;check-if-the-follow-flaconi-block-is-displayed",
+        "after": [
+          {
+            "result": {
+              "duration": 76897000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "BaseUtil.tearDown(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 32951600,
+              "status": "passed"
+            },
+            "line": 96,
+            "name": "I should be on the page \"home\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "home",
+                  "offset": 25
+                }
+              ],
+              "location": "HomePageStepDefinition.i_should_be_on_the_page(String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 326404100,
+              "status": "passed"
+            },
+            "line": 97,
+            "name": "I should see the \"Follow Flaconi\" block on the page",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Follow Flaconi",
+                  "offset": 18
+                }
+              ],
+              "location": "HomePageStepDefinition.I_shoulld_see_the_block(String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 467169100,
+              "status": "passed"
+            },
+            "line": 98,
+            "name": "I should see the block title as \"Flaconi folgen\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Flaconi folgen",
+                  "offset": 33
+                }
+              ],
+              "location": "HomePageStepDefinition.getPaymentBlockTitle(String)"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "line": 94,
+            "name": "@homepage"
+          },
+          {
+            "line": 94,
+            "name": "@regression"
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 46600,
+              "status": "passed"
+            },
+            "match": {
+              "location": "BaseUtil.setUp(Scenario)"
+            }
+          },
+          {
+            "result": {
+              "duration": 4975565500,
+              "status": "passed"
+            },
+            "match": {
+              "location": "BaseUtil.goToHomePage(Scenario)"
+            }
+          }
+        ],
+        "line": 102,
+        "name": "Check if the Customer Service block is displayed",
+        "description": "",
+        "id": "homepage;check-if-the-customer-service-block-is-displayed",
+        "after": [
+          {
+            "result": {
+              "duration": 74964000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "BaseUtil.tearDown(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 533034600,
+              "status": "passed"
+            },
+            "line": 103,
+            "name": "I should be on the page \"home\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "home",
+                  "offset": 25
+                }
+              ],
+              "location": "HomePageStepDefinition.i_should_be_on_the_page(String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 547374500,
+              "status": "passed"
+            },
+            "line": 104,
+            "name": "I should see the \"Customer Service\" block on the page",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Customer Service",
+                  "offset": 18
+                }
+              ],
+              "location": "HomePageStepDefinition.I_shoulld_see_the_block(String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 361199000,
+              "status": "passed"
+            },
+            "line": 105,
+            "name": "I should see the block title as \"Kundenservice\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Kundenservice",
+                  "offset": 33
+                }
+              ],
+              "location": "HomePageStepDefinition.getPaymentBlockTitle(String)"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "line": 101,
+            "name": "@homepage"
+          },
+          {
+            "line": 101,
+            "name": "@regression"
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 77800,
+              "status": "passed"
+            },
+            "match": {
+              "location": "BaseUtil.setUp(Scenario)"
+            }
+          },
+          {
+            "result": {
+              "duration": 5252777800,
+              "status": "passed"
+            },
+            "match": {
+              "location": "BaseUtil.goToHomePage(Scenario)"
+            }
+          }
+        ],
+        "line": 109,
+        "name": "Check if the Newsletter block is displayed",
+        "description": "",
+        "id": "homepage;check-if-the-newsletter-block-is-displayed",
+        "after": [
+          {
+            "result": {
+              "duration": 73557300,
+              "status": "passed"
+            },
+            "match": {
+              "location": "BaseUtil.tearDown(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 94363600,
+              "status": "passed"
+            },
+            "line": 110,
+            "name": "I should be on the page \"home\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "home",
+                  "offset": 25
+                }
+              ],
+              "location": "HomePageStepDefinition.i_should_be_on_the_page(String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 240530500,
+              "status": "passed"
+            },
+            "line": 111,
+            "name": "I should see the \"Newsletter\" block on the page",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Newsletter",
+                  "offset": 18
+                }
+              ],
+              "location": "HomePageStepDefinition.I_shoulld_see_the_block(String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 450430400,
+              "status": "passed"
+            },
+            "line": 112,
+            "name": "I should see the block title as \"Beauty News\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Beauty News",
+                  "offset": 33
+                }
+              ],
+              "location": "HomePageStepDefinition.getPaymentBlockTitle(String)"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "line": 108,
+            "name": "@homepage"
+          },
+          {
+            "line": 108,
+            "name": "@regression"
+          }
+        ]
+      },
+      {
+        "comments": [
+          {
+            "line": 120,
+            "value": "#Then I click on the Payment block"
+          },
+          {
+            "line": 121,
+            "value": "#And I should be on the Klarna page"
+          }
+        ],
+        "before": [
+          {
+            "result": {
+              "duration": 82100,
+              "status": "passed"
+            },
+            "match": {
+              "location": "BaseUtil.setUp(Scenario)"
+            }
+          },
+          {
+            "result": {
+              "duration": 4836441500,
+              "status": "passed"
+            },
+            "match": {
+              "location": "BaseUtil.goToHomePage(Scenario)"
+            }
+          }
+        ],
+        "line": 125,
+        "name": "Check if the Certified trustly block is displayed",
+        "description": "",
+        "id": "homepage;check-if-the-certified-trustly-block-is-displayed",
+        "after": [
+          {
+            "result": {
+              "duration": 84924900,
+              "status": "passed"
+            },
+            "match": {
+              "location": "BaseUtil.tearDown(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 33325000,
+              "status": "passed"
+            },
+            "line": 126,
+            "name": "I should be on the page \"home\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "home",
+                  "offset": 25
+                }
+              ],
+              "location": "HomePageStepDefinition.i_should_be_on_the_page(String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 249682000,
+              "status": "passed"
+            },
+            "line": 127,
+            "name": "I should see the \"Trustly certified\" block on the page",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Trustly certified",
+                  "offset": 18
+                }
+              ],
+              "location": "HomePageStepDefinition.I_shoulld_see_the_block(String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 536294500,
+              "status": "passed"
+            },
+            "line": 128,
+            "name": "I should see the block title as \"Sicherheit\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Sicherheit",
+                  "offset": 33
+                }
+              ],
+              "location": "HomePageStepDefinition.getPaymentBlockTitle(String)"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "line": 124,
+            "name": "@homepage"
+          },
+          {
+            "line": 124,
+            "name": "@regression"
+          }
+        ]
+      }
+    ],
+    "name": "HomePage",
+    "description": "\r\nAs a QA Engineer\r\nI want to validate the functionality of the footer and related pages\r\nso the customer can use it like its supposed to.",
+    "id": "homepage",
+    "keyword": "Feature",
+    "uri": "C:/Users/Ovidiu/Workspace 5891/flaconiCucumber/src/test/resources/features/HomePage.feature"
+  }
+]

@@ -1,12 +1,18 @@
 package flaconi.shop.pageObject;
 
+import java.io.File;
+import java.io.IOException;
+import java.util.Iterator;
 import java.util.List;
 import java.util.Random;
 
+import org.apache.commons.io.FileUtils;
 import org.junit.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.ElementNotVisibleException;
 import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
@@ -89,6 +95,19 @@ public class HomePage extends BasePage {
 	@FindBy(xpath = "//*[@id='BrandsSliderWidget_2']/a")
 	public WebElement alle_Marken_button;
 
+	@FindBy(xpath = "//*[@id='main-navigation']/ul/li[3]/ul/li/a")
+	public List<WebElement> Pfelge;
+
+	@FindBy(xpath = "//*[@id='main-navigation']/ul/li[2]/ul/li/a")
+	public List<WebElement> Parfum;
+
+	// STORY block
+	@FindBy(id = "Story_9")
+	public WebElement story_block;
+	
+	// STORY block
+		@FindBy(xpath = "//*[starts-with(@id,'BrandAndProductDisplay')]")
+		public WebElement brand_product_display_block;
 
 	public void checkURLHomePage() {
 		String URL = driver.getCurrentUrl();
@@ -111,7 +130,6 @@ public class HomePage extends BasePage {
 	}
 
 	public void checkMainCategoryPflege(String mainCategory) {
-		List<WebElement> Pfelge = driver.findElements(By.xpath("//*[@id='main-navigation']/ul/li[3]/ul/li/a"));
 		switch (mainCategory) {
 		case "GESICHT":
 			Assert.assertEquals(Pfelge.get(0).getText(), mainCategory);
@@ -136,6 +154,33 @@ public class HomePage extends BasePage {
 		case "SPECIALS":
 			Assert.assertTrue(Pfelge.get(5).getAttribute("href").contains("/#"));
 			Pfelge.get(5).click();
+			break;
+		default:
+			throw new ElementNotVisibleException("Main-category " + mainCategory + " not found");
+		}
+	}
+
+	public void checkMainCategoryParfum(String mainCategory) {
+		switch (mainCategory) {
+		case "DAMMENPARFUM":
+			Assert.assertEquals(Parfum.get(0).getText(), mainCategory);
+			Parfum.get(0).click();
+			break;
+		case "HERRENPARFUM":
+			Assert.assertTrue(Parfum.get(1).getAttribute("href").contains("/koerperpflege/"));
+			Parfum.get(1).click();
+			break;
+		case "FUR ZUHAUSE":
+			Assert.assertTrue(Parfum.get(2).getText().equalsIgnoreCase(mainCategory));
+			Parfum.get(2).click();
+			break;
+		case "TOP MARKEN":
+			Assert.assertTrue(Parfum.get(4).getText().equalsIgnoreCase(mainCategory));
+			Parfum.get(3).click();
+			break;
+		case "SPECIALS":
+			Assert.assertTrue(Parfum.get(5).getAttribute("href").contains("/#"));
+			Parfum.get(4).click();
 			break;
 		default:
 			throw new ElementNotVisibleException("Main-category " + mainCategory + " not found");
@@ -203,9 +248,11 @@ public class HomePage extends BasePage {
 	}
 
 	// check Block is displayed
-	public void checkBlockDisplayed(String block) {
+	public void checkBlockDisplayed(String block) throws Throwable {
 		switch (block) {
 		case "Payment":
+			/*File scrFile = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
+			FileUtils.copyFile(scrFile, new File("c:\\tmp\\screenshot.png"));*/
 			waitToBeVisible(payment_block, 3);
 			Assert.assertTrue("PAYMENT BLOCK - ASSERTION :", payment_block.isDisplayed());
 			break;
@@ -237,6 +284,14 @@ public class HomePage extends BasePage {
 			waitToBeVisible(XLslider_block, 3);
 			Assert.assertTrue("XL Slider BLOCK - ASSERTION :", XLslider_block.isDisplayed());
 			break;
+		case "Story":
+			waitToBeVisible(story_block, 3);
+			Assert.assertTrue("STORY BLOCK - ASSERTION :", story_block.isDisplayed());
+			break;
+		case "Brand Product Display":
+			waitToBeVisible(story_block, 3);
+			Assert.assertTrue("BRAND PRODUCT DISPLAY BLOCK - ASSERTION :", story_block.isDisplayed());
+			break;
 		default:
 			throw new ElementNotVisibleException(">>> Block " + block + " not found");
 
@@ -245,7 +300,7 @@ public class HomePage extends BasePage {
 	}
 
 	// check Block title
-	public void checkBlockTitle(String title) {
+	public void checkBlockTitle(String title) throws Throwable {
 		switch (title) {
 		case "Bequem bezahlen":
 			waitToBeVisible(payment_block_title, 3);
@@ -317,6 +372,8 @@ public class HomePage extends BasePage {
 		Assert.assertTrue(alle_Marken_button.isDisplayed());
 		JavascriptExecutor ex = (JavascriptExecutor) driver;
 		ex.executeScript("arguments[0].click();", alle_Marken_button);
+		String buttonText = ex.executeScript("return window.ui_shop.pages.Home.blocks.BrandsSliderWidget[0].buttonText").toString();
+		Assert.assertEquals(buttonText, alle_Marken_button.getText());
 	}
 
 	public void scrollXLSlider() {
@@ -327,6 +384,9 @@ public class HomePage extends BasePage {
 		JavascriptExecutor ex = (JavascriptExecutor) driver;
 		ex.executeScript("arguments[0].click();", right);
 		ex.executeScript("arguments[0].click();", left);
+		
+		System.out.println(ex.executeScript("return window.ui_shop.pages.Home.blocks.BannersSlider[0].bannerItems[0].link"));
+	
 	}
 
 }
