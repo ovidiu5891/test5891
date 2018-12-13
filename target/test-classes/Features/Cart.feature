@@ -14,6 +14,6 @@ Scenario: Empty Cart
 	Then I should see empty cart message 
 	And I should see the recommended products 
 	When I click here link 
-	Then I should be on the Home page 
+	Then I should be on the page "home" 
 	
 	

@@ -79,10 +79,16 @@ public class HomePageStepDefinition extends AbstractStepDefinition {
 		home.clickAlleMarkenButton();
 	}
 
+	@And("^I check the block content$")
+	public void check_block_functionality() throws Throwable{
+		home = getInitializedPage(HomePage.class);
+		home.checkContentBrandProductDisplay();
+	}
+
 	@When("^I visit a random product detail page from category (\\d+) \"([^\"]*)\"$")
 	public void getCartQuantity(int orderCategory, String category) throws Throwable {
 		home = getInitializedPage(HomePage.class);
 		home.navigateToSpecificCategory(orderCategory, category);
-
 	}
+
 }

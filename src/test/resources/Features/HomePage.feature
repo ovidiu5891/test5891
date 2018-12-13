@@ -62,28 +62,39 @@ Scenario Outline: Checks the main-categories for Pfelge
 		
 		
 		
-@homepage @XLsliderBlock @regression 
-Scenario: Check if the XL slider block is displayed 
-	Given I should be on the page "home" 
-	Then I should see the "XL slider" block on the page 
-	And I should be able to scroll the images 
+		@homepage 		@XLsliderBlock 		@reactBlock 
+		Scenario: Check if the XL slider block is displayed 
+			Given I should be on the page "home" 
+			Then I should see the "XL slider" block on the page 
+			And I should be able to scroll the images 
+			
 	
-@homepage @brandBlock @regression 
-Scenario: Check if the Brand block is displayed 
-	Given I should be on the page "home" 
-	Then I should see the "Brand" block on the page 
-	And I should be able to scroll through the brands 
-	And I click the Alle Marken button 
+		@homepage 		@BrandBlock		 @reactBlock 
+		Scenario: Check if the Brand block is displayed 
+			Given I should be on the page "home" 
+			Then I should see the "Brand" block on the page 
+			And I should be able to scroll through the brands 
+			And I click the Alle Marken button 
+			
 	
-@storyBlock @regression 
-Scenario: Check if the Brand block is displayed 
-	Given I should be on the page "home" 
-	Then I should see the "Story" block on the page 
+		@homepage 		@StoryBlock 	@reactBlock
+		Scenario: Check if the Story block is displayed 
+			Given I should be on the page "home" 
+			Then I should see the "Story" block on the page 
 	
-@brandProductDisplayBlock @regression 
-Scenario: Check if the About Flaconi block is displayed 
-	Given I should be on the page "home" 
-	Then I should see the "Brand Product Display" block on the page 
+		
+		@homepage		 @BrandProductDisplayBlock 		@reactBlock
+		Scenario: Check if the Brand Product Display block is displayed 
+			Given I should be on the page "home" 
+			Then I should see the "Brand Product Display" block on the page 
+			And I check the block content 
+	
+		
+		@homepage		 @FeaturedBlock 	@reactBlock
+		Scenario: Check if the Featured block is displayed 
+			Given I should be on the page "home" 
+			Then I should see the "Featured" block on the page 
+	
 	
 @homepage @regression @smoke 
 Scenario: Check if the About Flaconi block is displayed 
@@ -91,7 +102,7 @@ Scenario: Check if the About Flaconi block is displayed
 	Then I should see the "About Flaconi" block on the page 
 	And I should see the block title as "Flaconi" 
 	
-@homepage @regression 
+@homepage @regression @followBlock 
 Scenario: Check if the Follow Flaconi block is displayed 
 	Given I should be on the page "home" 
 	Then I should see the "Follow Flaconi" block on the page 
