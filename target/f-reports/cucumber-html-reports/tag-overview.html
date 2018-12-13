@@ -49,32 +49,32 @@ $(document).ready(function() {
   $(document).ready(function() {
 
     var chartData = {
-        labels: ["@homepage","@mainCategory"],
+        labels: ["@BrandBlock","@BrandProductDisplayBlock","@FeaturedBlock","@StoryBlock","@XLsliderBlock","@homepage","@reactBlock"],
         datasets: [
             {
                 label: 'Passed',
                 backgroundColor: "#92DD96",
-                data: [50.00, 50.00]
+                data: [100.00, 100.00, 50.00, 50.00, 100.00, 85.71, 85.71]
             },
             {
                 label: 'Failed',
                 backgroundColor: "#F2928C",
-                data: [25.00, 25.00]
+                data: [0.00, 0.00, 50.00, 50.00, 0.00, 14.29, 14.29]
             },
             {
                 label: 'Skipped',
                 backgroundColor: "#8AF",
-                data: [25.00, 25.00]
+                data: [0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00]
             },
             {
                 label: 'Pending',
                 backgroundColor: "#F5F28F",
-                data: [0.00, 0.00]
+                data: [0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00]
             },
             {
                 label: 'Undefined',
                 backgroundColor: "#F5B975",
-                data: [0.00, 0.00]
+                data: [0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00]
             }
         ]
     };
@@ -135,7 +135,7 @@ $(document).ready(function() {
           <tr class="info">
             <td>flaconiCucumber</td>
                           <td>1</td>
-                        <td>12 Nov 2018, 17:23</td>
+                        <td>13 Dec 2018, 17:01</td>
           </tr>
         </tbody>
       </table>
@@ -192,65 +192,140 @@ $(document).ready(function() {
 
   <tbody>
           <tr>
-        <td class="tagname"><a href="homepage.html">@homepage</a></td>
+        <td class="tagname"><a href="BrandBlock.html">@BrandBlock</a></td>
+        
+        <td  class="passed"    >1</td>
+        <td >0</td>
+        <td class="total">1</td>
+        <td      class="passed"    >4</td>
+        <td >0</td>
+        <td >0</td>
+        <td >0</td>
+        <td >0</td>
+        <td class="total">4</td>
+        <td class="duration" data-value="3648194600">3s 648ms</td>
+        <td class="passed">Passed</td>
+      </tr>
+          <tr>
+        <td class="tagname"><a href="BrandProductDisplayBlock.html">@BrandProductDisplayBlock</a></td>
+        
+        <td  class="passed"    >1</td>
+        <td >0</td>
+        <td class="total">1</td>
+        <td      class="passed"    >3</td>
+        <td >0</td>
+        <td >0</td>
+        <td >0</td>
+        <td >0</td>
+        <td class="total">3</td>
+        <td class="duration" data-value="4625482700">4s 625ms</td>
+        <td class="passed">Passed</td>
+      </tr>
+          <tr>
+        <td class="tagname"><a href="FeaturedBlock.html">@FeaturedBlock</a></td>
         
         <td >0</td>
-        <td  class="failed"    >6</td>
-        <td class="total">6</td>
-        <td      class="passed"    >12</td>
-        <td      class="failed"    >6</td>
-        <td     class="skipped"   >6</td>
+        <td  class="failed"    >1</td>
+        <td class="total">1</td>
+        <td      class="passed"    >1</td>
+        <td      class="failed"    >1</td>
         <td >0</td>
         <td >0</td>
-        <td class="total">24</td>
-        <td class="duration" data-value="4640251100">4s 640ms</td>
+        <td >0</td>
+        <td class="total">2</td>
+        <td class="duration" data-value="1262659800">1s 262ms</td>
         <td class="failed">Failed</td>
       </tr>
           <tr>
-        <td class="tagname"><a href="mainCategory.html">@mainCategory</a></td>
+        <td class="tagname"><a href="StoryBlock.html">@StoryBlock</a></td>
         
         <td >0</td>
-        <td  class="failed"    >6</td>
-        <td class="total">6</td>
+        <td  class="failed"    >1</td>
+        <td class="total">1</td>
+        <td      class="passed"    >1</td>
+        <td      class="failed"    >1</td>
+        <td >0</td>
+        <td >0</td>
+        <td >0</td>
+        <td class="total">2</td>
+        <td class="duration" data-value="1061277200">1s 061ms</td>
+        <td class="failed">Failed</td>
+      </tr>
+          <tr>
+        <td class="tagname"><a href="XLsliderBlock.html">@XLsliderBlock</a></td>
+        
+        <td  class="passed"    >1</td>
+        <td >0</td>
+        <td class="total">1</td>
+        <td      class="passed"    >3</td>
+        <td >0</td>
+        <td >0</td>
+        <td >0</td>
+        <td >0</td>
+        <td class="total">3</td>
+        <td class="duration" data-value="15086791100">15s 086ms</td>
+        <td class="passed">Passed</td>
+      </tr>
+          <tr>
+        <td class="tagname"><a href="homepage.html">@homepage</a></td>
+        
+        <td  class="passed"    >3</td>
+        <td  class="failed"    >2</td>
+        <td class="total">5</td>
         <td      class="passed"    >12</td>
-        <td      class="failed"    >6</td>
-        <td     class="skipped"   >6</td>
+        <td      class="failed"    >2</td>
         <td >0</td>
         <td >0</td>
-        <td class="total">24</td>
-        <td class="duration" data-value="4640251100">4s 640ms</td>
+        <td >0</td>
+        <td class="total">14</td>
+        <td class="duration" data-value="25684405400">25s 684ms</td>
+        <td class="failed">Failed</td>
+      </tr>
+          <tr>
+        <td class="tagname"><a href="reactBlock.html">@reactBlock</a></td>
+        
+        <td  class="passed"    >3</td>
+        <td  class="failed"    >2</td>
+        <td class="total">5</td>
+        <td      class="passed"    >12</td>
+        <td      class="failed"    >2</td>
+        <td >0</td>
+        <td >0</td>
+        <td >0</td>
+        <td class="total">14</td>
+        <td class="duration" data-value="25684405400">25s 684ms</td>
         <td class="failed">Failed</td>
       </tr>
       </tbody>
 
   <tfoot class="total">
     <tr>
-      <td>2</td>
-            <td>0</td>
-      <td>12</td>
-      <td>12</td>
-      <td>24</td>
-      <td>12</td>
-      <td>12</td>
+      <td>7</td>
+            <td>9</td>
+      <td>6</td>
+      <td>15</td>
+      <td>36</td>
+      <td>6</td>
       <td>0</td>
       <td>0</td>
-      <td>48</td>
-      <td class="duration">9s 280ms</td>
+      <td>0</td>
+      <td>42</td>
+      <td class="duration">1m 17s 053ms</td>
       <td></td>
     </tr>
     <tr>
       <td></td>
-            <td>0.00%</td>
-      <td>100.00%</td>
+            <td>60.00%</td>
+      <td>40.00%</td>
       <td></td>
-      <td>50.00%</td>
-      <td>25.00%</td>
-      <td>25.00%</td>
+      <td>85.71%</td>
+      <td>14.29%</td>
       <td>0.00%</td>
       <td>0.00%</td>
+      <td>0.00%</td>
       <td></td>
       <td></td>
-      <td>100.00%</td>
+      <td>40.00%</td>
     </tr>
   </tfoot>
 </table>

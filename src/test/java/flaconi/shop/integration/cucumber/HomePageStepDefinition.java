@@ -27,6 +27,8 @@ public class HomePageStepDefinition extends AbstractStepDefinition {
 		home.checkMainCategoryPflege(mainCategory);
 	}
 	
+	
+	
 	@And("^I should be on the page \"([^\"]*)\"$")
 	public void i_should_be_on_the_page(String page) throws Throwable{
 		home = getInitializedPage(HomePage.class);
@@ -48,7 +50,7 @@ public class HomePageStepDefinition extends AbstractStepDefinition {
 	
 	//check block is displayed
 	@Then("^I should see the \"([^\"]*)\" block on the page$")
-	public void I_shoulld_see_the_payment_block(String block) throws Throwable{
+	public void I_shoulld_see_the_block(String block) throws Throwable{
 		home = getInitializedPage(HomePage.class);
 		home.checkBlockDisplayed(block);
 	}
@@ -77,10 +79,16 @@ public class HomePageStepDefinition extends AbstractStepDefinition {
 		home.clickAlleMarkenButton();
 	}
 
+	@And("^I check the block content$")
+	public void check_block_functionality() throws Throwable{
+		home = getInitializedPage(HomePage.class);
+		home.checkContentBrandProductDisplay();
+	}
+
 	@When("^I visit a random product detail page from category (\\d+) \"([^\"]*)\"$")
 	public void getCartQuantity(int orderCategory, String category) throws Throwable {
 		home = getInitializedPage(HomePage.class);
 		home.navigateToSpecificCategory(orderCategory, category);
-
 	}
+
 }

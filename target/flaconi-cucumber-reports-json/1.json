@@ -1,0 +1,663 @@
+[
+  {
+    "comments": [
+      {
+        "line": 1,
+        "value": "#Author:Ovidiu Badea"
+      }
+    ],
+    "line": 2,
+    "elements": [
+      {
+        "comments": [
+          {
+            "line": 26,
+            "value": "#Scenario Outline: Checks the main-categories for Parfum"
+          },
+          {
+            "line": 28,
+            "value": "#Given I hover over the 2 \"Parfum\" category"
+          },
+          {
+            "line": 29,
+            "value": "#Then I should see the main-categories \"\u003cParfum-main-category\u003e\""
+          },
+          {
+            "line": 30,
+            "value": "#And I should be on the page \"\u003cpage\u003e\""
+          },
+          {
+            "line": 33,
+            "value": "#Examples:"
+          },
+          {
+            "line": 35,
+            "value": "#|Parfum-main-category|\t\t\t\t|page|"
+          },
+          {
+            "line": 36,
+            "value": "#|DAMENPARFUM|\t\t\t\t\t\t|damenparfum|"
+          },
+          {
+            "line": 37,
+            "value": "#|HERRENPARFUM|\t\t\t\t\t\t|herrenparfum|"
+          },
+          {
+            "line": 38,
+            "value": "#|SONNEN|\t\t\t\t\t\t\t|sonnenpflege|"
+          },
+          {
+            "line": 39,
+            "value": "#|FOR MEN|\t\t\t\t\t\t\t|herrenpflege|"
+          },
+          {
+            "line": 40,
+            "value": "#|TOP MARKEN|\t\t\t\t\t\t|marken|"
+          },
+          {
+            "line": 41,
+            "value": "#|SPECIALS|\t\t\t\t\t\t\t|specials|"
+          },
+          {
+            "line": 43,
+            "value": "#@subCategory"
+          },
+          {
+            "line": 44,
+            "value": "#Scenario Outline: Checks the sub-category for Gesicht"
+          },
+          {
+            "line": 46,
+            "value": "#Given I hover over the 3 \"Pflege\" category"
+          },
+          {
+            "line": 47,
+            "value": "#And I should see the sub-categories \"\u003cGesicht-sub-category\u003e\""
+          },
+          {
+            "line": 49,
+            "value": "#Examples:"
+          },
+          {
+            "line": 50,
+            "value": "#|Gesicht-sub-category|"
+          },
+          {
+            "line": 51,
+            "value": "#|Reinigung|"
+          },
+          {
+            "line": 52,
+            "value": "#|Tagespflege|"
+          },
+          {
+            "line": 53,
+            "value": "#|Nachtpflege|"
+          },
+          {
+            "line": 54,
+            "value": "#|Augenpflege|"
+          },
+          {
+            "line": 55,
+            "value": "#|Maske \u0026 Peeling|"
+          },
+          {
+            "line": 56,
+            "value": "#|Serum \u0026 Kur|"
+          },
+          {
+            "line": 57,
+            "value": "#|Anti-Aging|"
+          },
+          {
+            "line": 58,
+            "value": "#|Lippenpflege|"
+          },
+          {
+            "line": 59,
+            "value": "#|Zahnpflege|"
+          },
+          {
+            "line": 60,
+            "value": "#|Gesichtsbursten|"
+          },
+          {
+            "line": 61,
+            "value": "#|Gesichtpflege-Sets|"
+          }
+        ],
+        "before": [
+          {
+            "result": {
+              "duration": 2886700,
+              "status": "passed"
+            },
+            "match": {
+              "location": "BaseUtil.setUp(Scenario)"
+            }
+          },
+          {
+            "result": {
+              "duration": 5825037500,
+              "status": "passed"
+            },
+            "match": {
+              "location": "BaseUtil.goToHomePage(Scenario)"
+            }
+          }
+        ],
+        "line": 66,
+        "name": "Check if the XL slider block is displayed",
+        "description": "",
+        "id": "homepage;check-if-the-xl-slider-block-is-displayed",
+        "after": [
+          {
+            "result": {
+              "duration": 70947700,
+              "status": "passed"
+            },
+            "match": {
+              "location": "BaseUtil.tearDown(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1242534700,
+              "status": "passed"
+            },
+            "line": 67,
+            "name": "I should be on the page \"home\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "home",
+                  "offset": 25
+                }
+              ],
+              "location": "HomePageStepDefinition.i_should_be_on_the_page(String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "output": [
+              "Number of blocks: 1\nNumber of images: 6\nSlide interval seconds: 5"
+            ],
+            "result": {
+              "duration": 283706000,
+              "status": "passed"
+            },
+            "line": 68,
+            "name": "I should see the \"XL slider\" block on the page",
+            "match": {
+              "arguments": [
+                {
+                  "val": "XL slider",
+                  "offset": 18
+                }
+              ],
+              "location": "HomePageStepDefinition.I_shoulld_see_the_block(String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "output": [
+              "Banner image 0 - CDN link: \nhttps://cdn.flaconi.de/media/images/promo/2018/181210-xl-dd-4produkt-gratis_v2.jpg\nHTTP status code: 200\nServer response time: 194 milliseconds\netag: \"abab3b9c9d9972d079ccaa0ce8740662\"\nage: 247\n\nLink image 0 :\nhttps://www.flaconi.de/search/\nHTTP status code: 200\nServer response time: 128 milliseconds",
+              "Banner image 1 - CDN link: \nhttps://cdn.flaconi.de/media/images/promo/2018/181203-XL-the-beauty-of-gifting-v3.jpg\nHTTP status code: 200\nServer response time: 92 milliseconds\netag: \"5b827d48c13dfbca214c4418a328d305\"\nage: 2262\n\nLink image 1 :\nhttps://www.flaconi.de/the-beauty-of-gifting-produktempfehlungen/\nHTTP status code: 200\nServer response time: 514 milliseconds",
+              "Banner image 2 - CDN link: \nhttps://cdn.flaconi.de/media/images/promo/2018/181127-xl-beauty-of-gifting.jpg\nHTTP status code: 200\nServer response time: 91 milliseconds\netag: \"9cb8d9bf01b9b88af370234213ae0746\"\nage: 2035\n\nLink image 2 :\nhttps://www.flaconi.de/geschenke-verpacken/\nHTTP status code: 200\nServer response time: 271 milliseconds",
+              "Banner image 3 - CDN link: \nhttps://cdn.flaconi.de/media/images/promo/2018/181119-coty-xl-miltibrand-xmas.jpg\nHTTP status code: 200\nServer response time: 104 milliseconds\netag: \"ab134e7250b780a38e1e6f3906331dfc\"\nage: 2031\n\nLink image 3 :\nhttps://www.flaconi.de/luxus-lieblinge/\nHTTP status code: 200\nServer response time: 179 milliseconds",
+              "Banner image 4 - CDN link: \nhttps://cdn.flaconi.de/media/images/promo/2018/1000x530px_BOS_X2701_CM18_319.jpg\nHTTP status code: 200\nServer response time: 89 milliseconds\netag: \"4d5e28056f724088348e3f23bb393ca9\"\nage: 1892\n\nLink image 4 :\nhttps://www.flaconi.de/search/?q\u003dboss+the+scent+private+accord\nHTTP status code: 200\nServer response time: 134 milliseconds",
+              "Banner image 5 - CDN link: \nhttps://cdn.flaconi.de/media/images/promo/2018/KW 50_LOV_WEB_Flaconi_ 1000x530px_151118.jpg\nHTTP status code: 200\nServer response time: 83 milliseconds\netag: \"c9a77bdfbdb970e0d2d52d9909cabafe\"\nage: 1637\n\nLink image 5 :\nhttps://www.flaconi.de/l-o-v/\nHTTP status code: 200\nServer response time: 116 milliseconds"
+            ],
+            "result": {
+              "duration": 13560550400,
+              "status": "passed"
+            },
+            "line": 69,
+            "name": "I should be able to scroll the images",
+            "match": {
+              "location": "HomePageStepDefinition.i_scroll_images()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "line": 65,
+            "name": "@homepage"
+          },
+          {
+            "line": 65,
+            "name": "@XLsliderBlock"
+          },
+          {
+            "line": 65,
+            "name": "@reactBlock"
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 36600,
+              "status": "passed"
+            },
+            "match": {
+              "location": "BaseUtil.setUp(Scenario)"
+            }
+          },
+          {
+            "result": {
+              "duration": 5624286300,
+              "status": "passed"
+            },
+            "match": {
+              "location": "BaseUtil.goToHomePage(Scenario)"
+            }
+          }
+        ],
+        "line": 73,
+        "name": "Check if the Brand block is displayed",
+        "description": "",
+        "id": "homepage;check-if-the-brand-block-is-displayed",
+        "after": [
+          {
+            "result": {
+              "duration": 75824700,
+              "status": "passed"
+            },
+            "match": {
+              "location": "BaseUtil.tearDown(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1031603200,
+              "status": "passed"
+            },
+            "line": 74,
+            "name": "I should be on the page \"home\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "home",
+                  "offset": 25
+                }
+              ],
+              "location": "HomePageStepDefinition.i_should_be_on_the_page(String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "output": [
+              "Number of brands: 13"
+            ],
+            "result": {
+              "duration": 297344300,
+              "status": "passed"
+            },
+            "line": 75,
+            "name": "I should see the \"Brand\" block on the page",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Brand",
+                  "offset": 18
+                }
+              ],
+              "location": "HomePageStepDefinition.I_shoulld_see_the_block(String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 239556400,
+              "status": "passed"
+            },
+            "line": 76,
+            "name": "I should be able to scroll through the brands",
+            "match": {
+              "location": "HomePageStepDefinition.scroll_through_the_brands()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2079690700,
+              "status": "passed"
+            },
+            "line": 77,
+            "name": "I click the Alle Marken button",
+            "match": {
+              "location": "HomePageStepDefinition.click_Alle_Marken_button()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "line": 72,
+            "name": "@homepage"
+          },
+          {
+            "line": 72,
+            "name": "@BrandBlock"
+          },
+          {
+            "line": 72,
+            "name": "@reactBlock"
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 43300,
+              "status": "passed"
+            },
+            "match": {
+              "location": "BaseUtil.setUp(Scenario)"
+            }
+          },
+          {
+            "result": {
+              "duration": 4576707700,
+              "status": "passed"
+            },
+            "match": {
+              "location": "BaseUtil.goToHomePage(Scenario)"
+            }
+          }
+        ],
+        "line": 81,
+        "name": "Check if the Story block is displayed",
+        "description": "",
+        "id": "homepage;check-if-the-story-block-is-displayed",
+        "after": [
+          {
+            "result": {
+              "duration": 75245000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "BaseUtil.tearDown(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1026240100,
+              "status": "passed"
+            },
+            "line": 82,
+            "name": "I should be on the page \"home\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "home",
+                  "offset": 25
+                }
+              ],
+              "location": "HomePageStepDefinition.i_should_be_on_the_page(String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 35037100,
+              "error_message": "java.lang.AssertionError: Story block is not displayed !\r\n\tat org.junit.Assert.fail(Assert.java:88)\r\n\tat org.junit.Assert.assertTrue(Assert.java:41)\r\n\tat flaconi.shop.pageObject.HomePage.checkBlockDisplayed(HomePage.java:395)\r\n\tat flaconi.shop.integration.cucumber.HomePageStepDefinition.I_shoulld_see_the_block(HomePageStepDefinition.java:55)\r\n\tat ✽.Then I should see the \"Story\" block on the page(C:/Projects/Workspace 5891/flaconiCucumber/src/test/resources/features/HomePage.feature:83)\r\n",
+              "status": "failed"
+            },
+            "line": 83,
+            "name": "I should see the \"Story\" block on the page",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Story",
+                  "offset": 18
+                }
+              ],
+              "location": "HomePageStepDefinition.I_shoulld_see_the_block(String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 80,
+            "name": "@homepage"
+          },
+          {
+            "line": 80,
+            "name": "@StoryBlock"
+          },
+          {
+            "line": 80,
+            "name": "@reactBlock"
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 55000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "BaseUtil.setUp(Scenario)"
+            }
+          },
+          {
+            "result": {
+              "duration": 4214199100,
+              "status": "passed"
+            },
+            "match": {
+              "location": "BaseUtil.goToHomePage(Scenario)"
+            }
+          }
+        ],
+        "line": 87,
+        "name": "Check if the Brand Product Display block is displayed",
+        "description": "",
+        "id": "homepage;check-if-the-brand-product-display-block-is-displayed",
+        "after": [
+          {
+            "result": {
+              "duration": 73552000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "BaseUtil.tearDown(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1027627800,
+              "status": "passed"
+            },
+            "line": 88,
+            "name": "I should be on the page \"home\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "home",
+                  "offset": 25
+                }
+              ],
+              "location": "HomePageStepDefinition.i_should_be_on_the_page(String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "output": [
+              "Brand Product Display block: 0\nNumber of products: 5\nHeadline: Dolce\u0026Gabbana Duft-Topseller",
+              "Brand Product Display block: 1\nNumber of products: 7\nHeadline: Shiseido Hautpflege"
+            ],
+            "result": {
+              "duration": 308982300,
+              "status": "passed"
+            },
+            "line": 89,
+            "name": "I should see the \"Brand Product Display\" block on the page",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Brand Product Display",
+                  "offset": 18
+                }
+              ],
+              "location": "HomePageStepDefinition.I_shoulld_see_the_block(String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "output": [
+              "Brand Product Display block 0\nBrand image - CDN link: https://cdn.flaconi.de/media/images/promo/2018/181206DGbrand_product.jpg\nHTTP status code: 200\nServer response time: 96\n\nBrand link: https://www.flaconi.de/dolce-gabbana/\nHTTP status code: 200\nServer response time: 89",
+              "Brand Product Display block 1\nBrand image - CDN link: https://cdn.flaconi.de/media/images/promo/2018/AW18_PACK_LOTION_Visual_490x410px.jpg\nHTTP status code: 200\nServer response time: 87\n\nBrand link: https://www.flaconi.de/gesichtspflege/shiseido/#multi-filter\nHTTP status code: 200\nServer response time: 120"
+            ],
+            "result": {
+              "duration": 3288872600,
+              "status": "passed"
+            },
+            "line": 90,
+            "name": "I check the block content",
+            "match": {
+              "location": "HomePageStepDefinition.check_block_functionality()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "line": 86,
+            "name": "@homepage"
+          },
+          {
+            "line": 86,
+            "name": "@BrandProductDisplayBlock"
+          },
+          {
+            "line": 86,
+            "name": "@reactBlock"
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 77800,
+              "status": "passed"
+            },
+            "match": {
+              "location": "BaseUtil.setUp(Scenario)"
+            }
+          },
+          {
+            "result": {
+              "duration": 4903212200,
+              "status": "passed"
+            },
+            "match": {
+              "location": "BaseUtil.goToHomePage(Scenario)"
+            }
+          }
+        ],
+        "line": 94,
+        "name": "Check if the Featured block is displayed",
+        "description": "",
+        "id": "homepage;check-if-the-featured-block-is-displayed",
+        "after": [
+          {
+            "result": {
+              "duration": 74446000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "BaseUtil.tearDown(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1026363900,
+              "status": "passed"
+            },
+            "line": 95,
+            "name": "I should be on the page \"home\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "home",
+                  "offset": 25
+                }
+              ],
+              "location": "HomePageStepDefinition.i_should_be_on_the_page(String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 236295900,
+              "error_message": "java.lang.AssertionError: There is no Headline !\r\n\tat org.junit.Assert.fail(Assert.java:88)\r\n\tat org.junit.Assert.assertTrue(Assert.java:41)\r\n\tat flaconi.shop.pageObject.HomePage.checkBlockDisplayed(HomePage.java:476)\r\n\tat flaconi.shop.integration.cucumber.HomePageStepDefinition.I_shoulld_see_the_block(HomePageStepDefinition.java:55)\r\n\tat ✽.Then I should see the \"Featured\" block on the page(C:/Projects/Workspace 5891/flaconiCucumber/src/test/resources/features/HomePage.feature:96)\r\n",
+              "status": "failed"
+            },
+            "line": 96,
+            "name": "I should see the \"Featured\" block on the page",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Featured",
+                  "offset": 18
+                }
+              ],
+              "location": "HomePageStepDefinition.I_shoulld_see_the_block(String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 93,
+            "name": "@homepage"
+          },
+          {
+            "line": 93,
+            "name": "@FeaturedBlock"
+          },
+          {
+            "line": 93,
+            "name": "@reactBlock"
+          }
+        ]
+      }
+    ],
+    "name": "HomePage",
+    "description": "\r\nAs a QA Engineer\r\nI want to validate the functionality of the footer and related pages\r\nso the customer can use it like its supposed to.",
+    "id": "homepage",
+    "keyword": "Feature",
+    "uri": "C:/Projects/Workspace 5891/flaconiCucumber/src/test/resources/features/HomePage.feature"
+  }
+]
